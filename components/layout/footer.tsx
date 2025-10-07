@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import {Github, Mail, Linkedin, Instagram} from 'lucide-react';
-import VisitorCounter from '@/components/ui/visitor-counter';
 
 export default function Footer() {
   return (
@@ -42,7 +41,7 @@ export default function Footer() {
           </div>
 
           {/* 방문자 카운터 */}
-          <VisitorCounter />
+          {/*<VisitorCounter />*/}
 
           {/* 저작권 */}
           <div className="text-sm text-muted-foreground">
