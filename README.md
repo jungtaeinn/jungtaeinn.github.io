@@ -1,6 +1,6 @@
 # jungtaeinn.github.io
 
-> **Next.js 15** 기반의 현대적이고 세련된 개인 블로그 플랫폼
+> **Next.js 15** 기반 jungtaeinn.github.io 블로그
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.0.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
