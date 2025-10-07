@@ -23,39 +23,70 @@ export default function AboutPage() {
                       quality={90}
                     />
                   </div>
-                  <CardTitle className="text-2xl">정태인</CardTitle>
-                  <p className="text-muted-foreground">개발자</p>
+                  <CardTitle className="text-2xl">JungTaeInn</CardTitle>
+                  <p className="text-muted-foreground">Frontend Engineer</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center gap-2 text-sm">
                     <MapPin className="h-4 w-4 text-muted-foreground" />
-                    <span>서울, 대한민국</span>
+                    <span>Seoul, Korea</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span>2024년부터 블로그 운영</span>
+                    <span>2016 -</span>
                   </div>
                   
-                  <div className="pt-4 space-y-2">
-                    <h4 className="font-semibold">기술 스택</h4>
-                    <div className="flex flex-wrap gap-1">
-                      {['TypeScript', 'React', 'Next.js', 'Node.js', 'Python'].map((tech) => (
-                        <Badge key={tech} variant="secondary" className="text-xs">
-                          {tech}
-                        </Badge>
-                      ))}
+                  <div className="pt-4 space-y-4">
+                    {/* Tech Stack */}
+                    <div className="space-y-2">
+                      <h4 className="font-semibold">Tech Stack</h4>
+                      <div className="flex flex-wrap gap-1">
+                        {['TypeScript', 'React', 'Next.js', 'JavaScript', 'Node.js', 'Python',
+                          'TanStack', 'Zustand', 'Redux', 'Mobx', 'Tailwind', 'Pnpm',
+                          'Docker', 'k8s', 'Webpack', 'Babel', 'Selenium', 'GAN', 'Java'].map((tech) => (
+                          <Badge key={tech} variant="secondary" className="text-xs">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Tools & Services */}
+                    <div className="space-y-2">
+                      <h4 className="font-semibold">Tools & Services</h4>
+                      <div className="flex flex-wrap gap-1">
+                        {['Claude Code', 'Cursor', 'Github Copilot', 'Intellij', 'Github', 'Gitlab', 'Jenkins',
+                          'Jira', 'Wiki', 'Docusaurus', 'Storybook', 'JSDoc', 'Eslint', 'Prettier',
+                          'SEO', 'GEO', 'GA', 'Datadog', 'Turborepo', 'Monorepo'].map((tool) => (
+                          <Badge key={tool} variant="outline" className="text-xs">
+                            {tool}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Areas of Interest */}
+                    <div className="space-y-2">
+                      <h4 className="font-semibold">Areas of Interest</h4>
+                      <div className="flex flex-wrap gap-1">
+                        {['Frontend Architecture', 'Frontend Optimization', 'Monorepo', 'AI Automation', 'Recommendation System', 'Digital Transformation'].map((field) => (
+                          <Badge key={field} variant="default" className="text-xs">
+                            {field}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
                   </div>
 
                   <div className="pt-4 space-y-2">
-                    <h4 className="font-semibold">연락처</h4>
+                    <h4 className="font-semibold">Contact</h4>
                     <div className="flex flex-col space-y-2">
                       <a 
-                        href="mailto:jungtaeinn@gmail.com"
+                        href="mailto:asgard5493@gmail.com"
                         className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
                         <Mail className="h-4 w-4" />
-                        jungtaeinn@gmail.com
+                        asgard5493@gmail.com
                       </a>
                       <a 
                         href="https://github.com/jungtaeinn"

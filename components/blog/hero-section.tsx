@@ -74,7 +74,7 @@ export default function HeroSection() {
             <Instagram className="h-5 w-5" />
           </a>
           <a
-            href="mailto:jungtaeinn@gmail.com"
+            href="mailto:asgard5493@gmail.com"
             className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
             aria-label="이메일 보내기"
           >
