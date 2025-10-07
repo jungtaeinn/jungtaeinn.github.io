@@ -36,7 +36,7 @@ export default function HeroSection() {
 
         {/* 서브타이틀 */}
         <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto">
-          My name is Jung TaeInn. I&apos;m a frontend engineer based in Seoul, Korea.
+          My name is Jung TaeInn. I&apos;m a Frontend Engineer based in Seoul, Korea.
         </p>
 
         {/* 인스피레이션 문구 */}
@@ -74,7 +74,7 @@ export default function HeroSection() {
             <Instagram className="h-5 w-5" />
           </a>
           <a
-            href="mailto:jungtaeinn@gmail.com"
+            href="mailto:asgard5493@gmail.com"
             className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
             aria-label="이메일 보내기"
           >

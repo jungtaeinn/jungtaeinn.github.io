@@ -22,7 +22,7 @@ export default function TagFilter({
   return (
     <div className="space-y-3 sm:space-y-4">
       <div className="flex items-center justify-between">
-        <h3 className="text-base sm:text-lg font-semibold">태그 필터</h3>
+        <h3 className="text-base sm:text-lg font-semibold">Tag Filter</h3>
         {selectedTags.length > 0 && (
           <Button
             variant="ghost"

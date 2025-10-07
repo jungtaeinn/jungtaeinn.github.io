@@ -33,7 +33,7 @@ export default function Footer() {
               <Instagram className="h-5 w-5" />
             </Link>
             <Link
-              href="mailto:jungtaeinn@gmail.com"
+              href="mailto:asgard5493@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
