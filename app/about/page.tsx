@@ -96,7 +96,7 @@ export default function AboutPage() {
                             />
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="font-medium text-sm">Computer Software Master's degree</div>
+                            <div className="font-medium text-sm">Computer Software Master&apos;s degree</div>
                             <div className="text-xs text-muted-foreground">Yonsei University</div>
                             <div className="text-xs text-muted-foreground">2022.03 - 2024.02</div>
                           </div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
                                 sizes="40px"
                               />
                             </div>
-                            <div className="font-medium text-sm">Computer Software Master's degree</div>
+                            <div className="font-medium text-sm">Computer Software Master&apos;s degree</div>
                           </div>
                           <div className="mt-1 ml-13 space-y-0.5">
                             <div className="text-xs text-muted-foreground">Yonsei University</div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                             />
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="font-medium text-sm">Information Communication Engineering Bachelor's degree</div>
+                            <div className="font-medium text-sm">Information Communication Engineering Bachelor&apos;s degree</div>
                             <div className="text-xs text-muted-foreground">Hankuk University of Foreign Studies</div>
                             <div className="text-xs text-muted-foreground">2010.03 - 2016.08</div>
                           </div>
@@ -155,7 +155,7 @@ export default function AboutPage() {
                                 sizes="40px"
                               />
                             </div>
-                            <div className="font-medium text-sm">Information Communication Engineering Bachelor's degree</div>
+                            <div className="font-medium text-sm">Information Communication Engineering Bachelor&apos;s degree</div>
                           </div>
                           <div className="mt-1 ml-13 space-y-0.5">
                             <div className="text-xs text-muted-foreground">Hankuk University of Foreign Studies</div>
