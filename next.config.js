@@ -6,8 +6,6 @@ const nextConfig = {
     unoptimized: true,
     formats: ['image/webp', 'image/avif'],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/jungtaeinn.github.io' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/jungtaeinn.github.io/' : '',
   experimental: {
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
   },
