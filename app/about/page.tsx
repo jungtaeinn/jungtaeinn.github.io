@@ -33,7 +33,137 @@ export default function AboutPage() {
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span>2016 -</span>
+                    <span>2016 - Present</span>
+                  </div>
+                  
+                  {/* Career Section */}
+                  <div className="space-y-3">
+                    <h4 className="font-semibold">Career</h4>
+                    <div className="space-y-3">
+                      {/* AMOREPACIFIC - Current Job */}
+                      <div className="flex items-center gap-3 border-l-2 border-primary pl-3">
+                        <div className="relative w-10 h-10 flex-shrink-0">
+                          <Image
+                            src="/images/amorepacific_logo.jpeg"
+                            alt="AMOREPACIFIC"
+                            fill
+                            className="rounded-md object-cover"
+                            sizes="40px"
+                          />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="font-medium text-sm">Frontend Engineer</div>
+                          <div className="text-xs text-muted-foreground">AMOREPACIFIC</div>
+                          <div className="text-xs text-muted-foreground">2020.07 - Present</div>
+                        </div>
+                      </div>
+                      
+                      {/* GS ITM - Previous Job */}
+                      <div className="flex items-center gap-3 border-l-2 border-muted pl-3">
+                        <div className="relative w-10 h-10 flex-shrink-0">
+                          <Image
+                            src="/images/gsitm_logo.jpeg"
+                            alt="GS ITM"
+                            fill
+                            className="rounded-md object-cover"
+                            sizes="40px"
+                          />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="font-medium text-sm">FullStack Developer</div>
+                          <div className="text-xs text-muted-foreground">GS ITM</div>
+                          <div className="text-xs text-muted-foreground">2016.01 - 2020.06</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Education Section */}
+                  <div className="space-y-3">
+                    <h4 className="font-semibold">Education</h4>
+                    <div className="space-y-3">
+                      {/* Yonsei University - Master's */}
+                      <div className="border-l-2 border-primary pl-3">
+                        {/* Mobile/Tablet Layout */}
+                        <div className="flex items-center gap-3 xl:hidden">
+                          <div className="relative w-10 h-10 flex-shrink-0">
+                            <Image
+                              src="/images/yonsei_logo.jpeg"
+                              alt="Yonsei University"
+                              fill
+                              className="rounded-md object-cover"
+                              sizes="40px"
+                            />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="font-medium text-sm">Computer Software Master's degree</div>
+                            <div className="text-xs text-muted-foreground">Yonsei University</div>
+                            <div className="text-xs text-muted-foreground">2022.03 - 2024.02</div>
+                          </div>
+                        </div>
+                        
+                        {/* Desktop Layout (1024px+) */}
+                        <div className="hidden xl:block">
+                          <div className="flex items-center gap-3">
+                            <div className="relative w-10 h-10 flex-shrink-0">
+                              <Image
+                                src="/images/yonsei_logo.jpeg"
+                                alt="Yonsei University"
+                                fill
+                                className="rounded-md object-cover"
+                                sizes="40px"
+                              />
+                            </div>
+                            <div className="font-medium text-sm">Computer Software Master's degree</div>
+                          </div>
+                          <div className="mt-1 ml-13 space-y-0.5">
+                            <div className="text-xs text-muted-foreground">Yonsei University</div>
+                            <div className="text-xs text-muted-foreground">2022.03 - 2024.02</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* HUFS - Bachelor's */}
+                      <div className="border-l-2 border-muted pl-3">
+                        {/* Mobile/Tablet Layout */}
+                        <div className="flex items-center gap-3 xl:hidden">
+                          <div className="relative w-10 h-10 flex-shrink-0">
+                            <Image
+                              src="/images/hufs_logo.jpeg"
+                              alt="Hankuk University of Foreign Studies"
+                              fill
+                              className="rounded-md object-cover"
+                              sizes="40px"
+                            />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="font-medium text-sm">Information Communication Engineering Bachelor's degree</div>
+                            <div className="text-xs text-muted-foreground">Hankuk University of Foreign Studies</div>
+                            <div className="text-xs text-muted-foreground">2010.03 - 2016.08</div>
+                          </div>
+                        </div>
+                        
+                        {/* Desktop Layout (1024px+) */}
+                        <div className="hidden xl:block">
+                          <div className="flex items-center gap-3">
+                            <div className="relative w-10 h-10 flex-shrink-0">
+                              <Image
+                                src="/images/hufs_logo.jpeg"
+                                alt="Hankuk University of Foreign Studies"
+                                fill
+                                className="rounded-md object-cover"
+                                sizes="40px"
+                              />
+                            </div>
+                            <div className="font-medium text-sm">Information Communication Engineering Bachelor's degree</div>
+                          </div>
+                          <div className="mt-1 ml-13 space-y-0.5">
+                            <div className="text-xs text-muted-foreground">Hankuk University of Foreign Studies</div>
+                            <div className="text-xs text-muted-foreground">2010.03 - 2016.08</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   
                   <div className="pt-4 space-y-4">
@@ -74,6 +204,25 @@ export default function AboutPage() {
                             {field}
                           </Badge>
                         ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Patent Section */}
+                  <div className="space-y-3">
+                    <h4 className="font-semibold">Patent</h4>
+                    <div className="space-y-3">
+                      {/* Patent Card */}
+                      <div className="border-l-2 border-primary pl-3">
+                        <div className="font-medium text-xs">
+                          Service providing device, method, and program for providing product recommendation function to individuals through reinforcement learning using Thompson sampling algorithm
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1">
+                          Patent No. 10-2024-00221653
+                        </div>
+                        <div className="text-xs text-muted-foreground">
+                          Filed: 2024.02.15
+                        </div>
                       </div>
                     </div>
                   </div>
