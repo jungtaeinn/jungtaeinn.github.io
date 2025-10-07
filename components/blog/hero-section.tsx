@@ -36,7 +36,7 @@ export default function HeroSection() {
 
         {/* 서브타이틀 */}
         <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto">
-          My name is Jung TaeInn. I&apos;m a frontend engineer based in Seoul, Korea.
+          My name is Jung TaeInn. I&apos;m a Frontend Engineer based in Seoul, Korea.
         </p>
 
         {/* 인스피레이션 문구 */}
