@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 /**
  * 홈페이지 히어로 섹션 컴포넌트
@@ -39,9 +40,47 @@ export default function HeroSection() {
         </p>
 
         {/* 인스피레이션 문구 */}
-        <blockquote className="text-lg font-medium italic text-foreground mb-7">
-          &ldquo;I think it is possible for ordinary people to choose to be extraordinary.&rdquo;
-        </blockquote>
+        {/*<blockquote className="text-lg font-medium italic text-foreground mb-7">*/}
+        {/*  &ldquo;I think it is possible for ordinary people to choose to be extraordinary.&rdquo;*/}
+        {/*</blockquote>*/}
+
+        {/* 소셜 미디어 링크 */}
+        <div className="flex justify-center space-x-4">
+          <a
+            href="https://github.com/jungtaeinn"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+            aria-label="GitHub 프로필"
+          >
+            <Github className="h-5 w-5" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jungtaeinn5493"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+            aria-label="LinkedIn 프로필"
+          >
+            <Linkedin className="h-5 w-5" />
+          </a>
+          <a
+            href="https://instagram.com/_jungtaeinn"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+            aria-label="Instagram 프로필"
+          >
+            <Instagram className="h-5 w-5" />
+          </a>
+          <a
+            href="mailto:jungtaeinn@gmail.com"
+            className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+            aria-label="이메일 보내기"
+          >
+            <Mail className="h-5 w-5" />
+          </a>
+        </div>
       </div>
     </section>
   );

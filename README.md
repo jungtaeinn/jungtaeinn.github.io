@@ -188,7 +188,7 @@ pnpm build
  * @example
  * ```typescript
  * const posts = getSortedPostsData();
- * console.log(posts[0].title); // 가장 최근 포스트 제목
+ * console.log(posts[0].title); // 가장 최근 포스트 제목 
  * ```
  */
 export function getSortedPostsData(): PostData[]
@@ -373,6 +373,7 @@ coverImage: "/images/cover.jpg"
 - **이메일**: [jungtaeinn@gmail.com](mailto:jungtaeinn@gmail.com)
 - **GitHub**: [@jungtaeinn](https://github.com/jungtaeinn)
 - **LinkedIn**: [정태인](https://www.linkedin.com/in/jungtaeinn5493)
+- **Instagram**: [정태인](https://instagram.com/_jungtaeinn)
 
 ---
 

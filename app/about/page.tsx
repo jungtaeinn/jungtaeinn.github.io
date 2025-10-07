@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Github, Mail, Linkedin, MapPin, Calendar } from 'lucide-react';
+import { Github, Mail, Linkedin, Instagram, MapPin, Calendar } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -51,11 +51,11 @@ export default function AboutPage() {
                     <h4 className="font-semibold">연락처</h4>
                     <div className="flex flex-col space-y-2">
                       <a 
-                        href="mailto:jungtaeinn@example.com"
+                        href="mailto:jungtaeinn@gmail.com"
                         className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
                         <Mail className="h-4 w-4" />
-                        jungtaeinn@example.com
+                        jungtaeinn@gmail.com
                       </a>
                       <a 
                         href="https://github.com/jungtaeinn"
@@ -67,13 +67,22 @@ export default function AboutPage() {
                         @jungtaeinn
                       </a>
                       <a 
-                        href="https://linkedin.com/in/jungtaeinn"
+                        href="https://www.linkedin.com/in/jungtaeinn5493"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
                         <Linkedin className="h-4 w-4" />
                         LinkedIn
+                      </a>
+                      <a 
+                        href="https://instagram.com/_jungtaeinn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Instagram className="h-4 w-4" />
+                        Instagram
                       </a>
                     </div>
                   </div>

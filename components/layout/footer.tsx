@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Mail, Linkedin } from 'lucide-react';
+import {Github, Mail, Linkedin, Instagram} from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -16,25 +16,33 @@ export default function Footer() {
             >
               <Github className="h-5 w-5" />
             </Link>
-            <Link 
-              href="mailto:jungtaeinn@example.com" 
+            <Link
+                href="https://www.linkedin.com/in/jungtaeinn5493"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <Linkedin className="h-5 w-5" />
+            </Link>
+            <Link
+                href="https://instagram.com/_jungtaeinn"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <Instagram className="h-5 w-5" />
+            </Link>
+            <Link
+              href="mailto:jungtaeinn@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
-            </Link>
-            <Link 
-              href="https://linkedin.com/in/jungtaeinn" 
-              className="text-muted-foreground hover:text-primary transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin className="h-5 w-5" />
             </Link>
           </div>
 
           {/* 저작권 */}
           <div className="text-sm text-muted-foreground">
-            <p>&copy; 2024 정태인. All rights reserved.</p>
+            <p>&copy; 2025 - Jungtaeinn. All rights reserved.</p>
           </div>
         </div>
       </div>

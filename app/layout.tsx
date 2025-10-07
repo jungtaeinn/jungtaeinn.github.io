@@ -70,6 +70,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://jungtaeinn.github.io',
   },
+  icons: {
+    icon: '/images/profile.png',
+    shortcut: '/images/profile.png',
+    apple: '/images/profile.png',
+  },
 };
 
 /**
