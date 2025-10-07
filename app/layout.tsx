@@ -67,6 +67,9 @@ export const metadata: Metadata = {
   verification: {
     google: 'your-google-verification-code',
   },
+  other: {
+    'google-adsense-account': 'ca-pub-2553484543757947',
+  },
   alternates: {
     canonical: 'https://jungtaeinn.github.io',
   },
