@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Github, Mail, Linkedin, Instagram, MapPin, Calendar } from 'lucide-react';
+import { Github, Mail, Linkedin, Instagram, MapPin, Calendar, FileText, ExternalLink } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -185,7 +185,7 @@ export default function AboutPage() {
                     <div className="space-y-2">
                       <h4 className="font-semibold">Tools & Services</h4>
                       <div className="flex flex-wrap gap-1">
-                        {['Claude Code', 'Cursor', 'Github Copilot', 'Intellij', 'Github', 'Gitlab', 'Jenkins',
+                        {['Claude Code', 'Cursor AI', 'Github Copilot', 'Intellij', 'Github', 'Gitlab', 'Jenkins',
                           'Jira', 'Wiki', 'Docusaurus', 'Storybook', 'JSDoc', 'Eslint', 'Prettier',
                           'SEO', 'GEO', 'GA', 'Datadog', 'Turborepo', 'Monorepo'].map((tool) => (
                           <Badge key={tool} variant="outline" className="text-xs text-center">
@@ -295,20 +295,55 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="space-y-6">
-                {/* Turborepo Monorepo Architecture */}
+                  
+                {/* AI 기반 아모레몰 고객센터 페이지 개발 */}
                 <Card className="border-l-4 border-primary">
                   <CardHeader>
                     <div className="flex items-start justify-between gap-2">
-                      <CardTitle className="text-lg flex-1 min-w-0 break-normal">Turborepo 기반 모노레포 아키텍처 구축</CardTitle>
-                      <Badge variant="secondary" className="text-xs text-center flex-shrink-0">Solo Project</Badge>
+                      <CardTitle className="text-lg flex-1 min-w-0 break-normal">Turborepo 기반 아모레몰 서비스 페이지 개발</CardTitle>
+                      <Badge variant="secondary" className="text-xs text-center flex-shrink-0">AI Automation</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground">Dec 2024 - Mar 2025</p>
+                    <p className="text-sm text-muted-foreground">May 2025 - Nov 2025</p>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="space-y-2">
                       <h4 className="font-semibold text-sm">Tech Stack</h4>
                       <div className="flex flex-wrap gap-1">
-                        {['Turborepo', 'React 18', 'Next.js 15', 'TypeScript', 'React-Query', 'Zustand', 'Tailwind', 'Storybook', 'Docker'].map((tech) => (
+                        {['Turborepo', 'React 19', 'Next.js 15', 'TypeScript', 'Figma MCP', 'AI Automation', 'Tailwind', 'Storybook', 'Docusaurus'].map((tech) => (
+                          <Badge key={tech} variant="outline" className="text-xs text-center">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-sm">Key Achievements</h4>
+                      <ul className="text-sm space-y-1">
+                        <li>• Turborepo 기반 아모레몰 내 고객센터/공지사항/공지사항상세 페이지 개발 및 랜딩</li>
+                        <li>• Figma MCP를 활용한 디자인 자동 생성으로 일관성 있는 UI/UX 구현</li>
+                        <li>• AI 기반 커밋 메시지 자동 생성으로 개발 프로세스 효율성 향상</li>
+                        <li>• AI 기반 Merge Request 자동 생성 및 코드 리뷰 프로세스 자동화</li>
+                        <li>• FCP, LCP, CLS, INP 최적화 및 성능 최적화</li>
+                        <li>• 다양한 캐싱(TanStack, Next.js 등)을 통한 페이지 간 원활한 전환 및 사용자 경험 최적화</li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Turborepo Monorepo Architecture */}
+                <Card className="border-l-4 border-primary">
+                  <CardHeader>
+                    <div className="flex items-start justify-between gap-2">
+                      <CardTitle className="text-lg flex-1 min-w-0 break-normal">Turborepo 기반 모노레포 아키텍처 구축</CardTitle>
+                      <Badge variant="secondary" className="text-xs text-center flex-shrink-0">Team: 4 Members</Badge>
+                    </div>
+                    <p className="text-sm text-muted-foreground">Dec 2024 - Apr 2025</p>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-sm">Tech Stack</h4>
+                      <div className="flex flex-wrap gap-1">
+                        {['Turborepo', 'React 19', 'Next.js 15', 'TypeScript', 'React-Query', 'Zustand', 'Tailwind', 'Storybook', 'Docker'].map((tech) => (
                           <Badge key={tech} variant="outline" className="text-xs text-center">
                             {tech}
                           </Badge>
@@ -319,10 +354,25 @@ export default function AboutPage() {
                       <h4 className="font-semibold text-sm">Key Achievements</h4>
                       <ul className="text-sm space-y-1">
                         <li>• 아모레퍼시픽 통합 플랫폼을 위한 확장 가능한 모노레포 아키텍처 설계 및 구축</li>
+                        <li>• 패키징화를 통한 코어 플랫폼 형태의 라이브러리 관리 체계 구축</li>
+                        <li>• Docusaurus 기반 공식 문서화로 체계적인 코드 구성 및 개발 가이드 제공</li>
                         <li>• 빌드 속도 최적화 및 멀티 프로젝트 관리 효율성 향상</li>
                         <li>• 핵심 패키지와 서비스 코드 분리로 유지보수성 개선</li>
                         <li>• 디커플드 아키텍처를 통한 내부팀과 외주팀 간 협업 효율성 증대</li>
+                        <li>• FCP, LCP, CLS, INP 성능 최적화 및 다양한 캐싱 전략을 통한 사용자 경험 향상</li>
+                        <li>• Storybook 기반 컴포넌트 문서화로 코드-문서 자동화 구성 및 유지보수성 개선</li>
                       </ul>
+                    </div>
+                    <div className="pt-2">
+                      <a 
+                        href="/FE_NEXT_GEN_PRJ_2025_KR_1.3.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                      >
+                        <FileText className="h-4 w-4" />
+                        프로젝트 상세 문서 보기 (PDF)
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
@@ -344,14 +394,17 @@ export default function AboutPage() {
                         <li>• 아모레몰의 로그 분석 도구 도입 전략 및 상세 구현 사례 공유</li>
                       </ul>
                     </div>
-                    <a 
-                      href="https://www.linkedin.com/posts/jungtaeinn5493_datadogabrliveabrseoul2024-datadog-amorepacific-activity-7246069209447686144-T0E1" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline text-sm font-medium"
-                    >
-                      LinkedIn 포스트 보기 →
-                    </a>
+                    <div className="pt-2">
+                      <a 
+                        href="https://www.linkedin.com/posts/jungtaeinn5493_datadogabrliveabrseoul2024-datadog-amorepacific-activity-7246069209447686144-T0E1" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        LinkedIn DATADOG LIVE 포스트 보기
+                      </a>
+                    </div>
                   </CardContent>
                 </Card>
 
@@ -436,14 +489,17 @@ export default function AboutPage() {
                         <li>• 체계적인 로그 운영 프로세스에 대한 기술 블로그 포스팅</li>
                       </ul>
                     </div>
-                    <a 
-                      href="https://tech.apddev.com/2024/04/19/amoremall-logger/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline text-sm font-medium"
-                    >
-                      기술 블로그 보기 →
-                    </a>
+                    <div className="pt-2">
+                      <a 
+                        href="https://tech.apddev.com/2024/04/19/amoremall-logger/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        기술 블로그 보기
+                      </a>
+                    </div>
                   </CardContent>
                 </Card>
 
@@ -757,7 +813,6 @@ export default function AboutPage() {
                       <div className="space-y-2">
                         <h4 className="font-semibold text-sm">Key Achievements</h4>
                         <ul className="text-sm space-y-1">
-                          <li>• 2018년 기준 고객 CS 응대 1위 (486개)</li>
                           <li>• 상품/딜/기획전/이벤트/방송 관리도구 페이지 개발/운영</li>
                           <li>• 상품MD 및 협력사 고객 응대 및 장애 대응</li>
                           <li>• 서비스 지식자산화 정리 및 보안 취약점 개선</li>
