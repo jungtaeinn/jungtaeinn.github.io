@@ -1,10 +1,11 @@
 # jungtaeinn.github.io
 
-> **Next.js 15** 기반 jungtaeinn.github.io 블로그
+> **Next.js 15** 기반 정적 사이트 생성 블로그
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.0.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![React](https://img.shields.io/badge/React-18.0-blue?style=flat-square&logo=react)](https://react.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ## 📋 목차
@@ -22,17 +23,18 @@
 
 ## 🎯 개요
 
-`jungtaeinn.github.io`는 **Next.js 15**의 최신 App Router를 활용하여 구축된 현대적인 개인 블로그 플랫폼입니다. 마크다운 기반의 포스트 작성, 반응형 디자인, 다크 모드 지원 등 개발자 친화적인 기능들을 제공합니다.
+`jungtaeinn.github.io`는 **Next.js 15**의 App Router와 정적 사이트 생성(SSG)을 활용하여 구축된 현대적인 개인 블로그입니다. 마크다운 기반의 포스트 작성, 반응형 디자인, 다크 모드 지원 등 개발자 친화적인 기능들을 제공합니다.
 
 ### ✨ 핵심 특징
 
-- 🚀 **Next.js 15 App Router** - 최신 React 서버 컴포넌트 활용
+- 🚀 **Next.js 15 App Router** - 최신 React 서버 컴포넌트 및 정적 사이트 생성
 - 📝 **마크다운 기반** - 간편한 포스트 작성 및 관리
 - 🎨 **모던 UI/UX** - Tailwind CSS와 Radix UI 기반 세련된 디자인
-- 🌙 **다크 모드** - 사용자 선호에 따른 테마 전환
+- 🌙 **다크 모드** - 시스템 설정 기반 자동 테마 전환
 - 📱 **완전 반응형** - 모바일부터 데스크톱까지 최적화
 - ⚡ **성능 최적화** - 정적 사이트 생성 및 이미지 최적화
 - 🔍 **SEO 최적화** - 메타데이터 및 구조화된 데이터 지원
+- 🚀 **GitHub Pages 배포** - 정적 사이트로 빠른 배포
 
 ## 🚀 주요 기능
 
@@ -44,9 +46,10 @@
 
 ### 🎨 사용자 인터페이스
 - **반응형 디자인**: 모든 디바이스에서 최적화된 경험
-- **다크/라이트 모드**: 시스템 설정 또는 수동 전환
+- **다크 모드**: 시스템 설정 기반 자동 테마 전환
 - **애니메이션**: Framer Motion을 활용한 부드러운 전환 효과
-- **접근성**: WCAG 가이드라인 준수
+- **접근성**: Radix UI 기반 접근성 우선 컴포넌트
+- **타이포그래피**: Inter 폰트와 Tailwind Typography 플러그인
 
 ### 🔧 개발자 경험
 - **TypeScript**: 완전한 타입 안정성
@@ -57,25 +60,36 @@
 ## 🛠 기술 스택
 
 ### Frontend
-- **[Next.js 15](https://nextjs.org/)** - React 프레임워크
+- **[Next.js 15.0.0](https://nextjs.org/)** - React 프레임워크 (App Router, SSG)
 - **[React 18](https://react.dev/)** - UI 라이브러리
 - **[TypeScript 5](https://www.typescriptlang.org/)** - 타입 시스템
-- **[Tailwind CSS 3.3](https://tailwindcss.com/)** - CSS 프레임워크
+- **[Tailwind CSS 3.3.0](https://tailwindcss.com/)** - CSS 프레임워크
 
 ### UI 컴포넌트
 - **[Radix UI](https://www.radix-ui.com/)** - 접근성 우선 컴포넌트
-- **[Lucide React](https://lucide.dev/)** - 아이콘 라이브러리
-- **[Framer Motion](https://www.framer.com/motion/)** - 애니메이션
+  - `@radix-ui/react-dialog` - 모달 및 다이얼로그
+  - `@radix-ui/react-dropdown-menu` - 드롭다운 메뉴
+  - `@radix-ui/react-toast` - 토스트 알림
+- **[Lucide React 0.303.0](https://lucide.dev/)** - 아이콘 라이브러리
+- **[Framer Motion 10.16.16](https://www.framer.com/motion/)** - 애니메이션
 
 ### 콘텐츠 관리
-- **[Gray Matter](https://github.com/jonschlinkert/gray-matter)** - Frontmatter 파싱
-- **[Remark](https://remark.js.org/)** - 마크다운 처리
-- **[Remark GFM](https://github.com/remarkjs/remark-gfm)** - GitHub Flavored Markdown
+- **[Gray Matter 4.0.3](https://github.com/jonschlinkert/gray-matter)** - Frontmatter 파싱
+- **[Remark 15.0.1](https://remark.js.org/)** - 마크다운 처리
+- **[Remark GFM 4.0.0](https://github.com/remarkjs/remark-gfm)** - GitHub Flavored Markdown
+- **[Remark HTML 16.0.1](https://github.com/remarkjs/remark-html)** - HTML 변환
+
+### 유틸리티
+- **[clsx 2.0.0](https://github.com/lukeed/clsx)** - 조건부 클래스명
+- **[tailwind-merge 2.2.0](https://github.com/dcastil/tailwind-merge)** - Tailwind 클래스 병합
+- **[class-variance-authority 0.7.0](https://github.com/joe-bell/cva)** - 컴포넌트 변형 관리
+- **[date-fns 2.30.0](https://date-fns.org/)** - 날짜 유틸리티
 
 ### 개발 도구
-- **[ESLint](https://eslint.org/)** - 코드 린팅
-- **[PostCSS](https://postcss.org/)** - CSS 후처리
-- **[Autoprefixer](https://github.com/postcss/autoprefixer)** - CSS 벤더 프리픽스
+- **[ESLint 8](https://eslint.org/)** - 코드 린팅
+- **[PostCSS 8](https://postcss.org/)** - CSS 후처리
+- **[Autoprefixer 10.0.1](https://github.com/postcss/autoprefixer)** - CSS 벤더 프리픽스
+- **[Tailwind Typography 0.5.19](https://tailwindcss.com/docs/typography-plugin)** - 타이포그래피 플러그인
 
 ## 📁 프로젝트 구조
 
@@ -118,18 +132,29 @@ jungtaeinn.github.io/
 │   └── 📄 utils.ts                 # 공통 유틸리티
 ├── 📁 public/                      # 정적 파일
 │   ├── 📁 images/                  # 이미지 파일
-│   │   └── 📄 profile.png          # 프로필 이미지
+│   │   ├── 📄 profile.png          # 프로필 이미지
+│   │   ├── 📄 amorepacific_logo.jpeg
+│   │   ├── 📄 gsitm_logo.jpeg
+│   │   ├── 📄 hufs_logo.jpeg
+│   │   ├── 📄 yonsei_logo.jpeg
+│   │   └── 📁 posts/               # 포스트 관련 이미지
 │   └── 📁 posts/                   # 마크다운 포스트
 │       ├── 📄 welcome.md
-│       └── 📄 nextjs-blog-setup.md
+│       ├── 📄 nextjs-blog-setup.md
+│       ├── 📄 datadog-live-seoul-2024.md
+│       ├── 📄 if-you-cannot-do-great-things.md
+│       ├── 📄 journey-thousand-leagues.md
+│       ├── 📄 life-shrinks-expands-courage.md
+│       └── 📄 strive-not-to-be-success.md
 ├── 📁 styles/                      # 스타일 파일
 │   └── 📄 globals.css              # 글로벌 CSS
-├── 📁 .github/                     # GitHub 설정
-│   └── 📁 workflows/
-│       └── 📄 deploy.yml           # 배포 워크플로우
-├── 📄 next.config.js               # Next.js 설정
+├── 📄 next.config.js               # Next.js 설정 (정적 export)
 ├── 📄 tailwind.config.js           # Tailwind CSS 설정
 ├── 📄 tsconfig.json                # TypeScript 설정
+├── 📄 postcss.config.js            # PostCSS 설정
+├── 📄 pnpm-workspace.yaml          # pnpm 워크스페이스 설정
+├── 📄 pnpm-lock.yaml               # pnpm 락 파일
+├── 📄 Ads.txt                      # 광고 설정
 └── 📄 package.json                 # 프로젝트 의존성
 ```
 
@@ -169,8 +194,18 @@ pnpm dev
 #### 4. 프로덕션 빌드
 
 ```bash
-# pnpm 사용
+# 정적 사이트 생성 (GitHub Pages용)
 pnpm build
+
+# 또는 export 명령어 사용
+pnpm export
+```
+
+#### 5. 정적 사이트 배포
+
+```bash
+# GitHub Pages에 배포
+pnpm deploy
 ```
 
 ## 📚 API 문서
@@ -318,28 +353,40 @@ coverImage: "/images/cover.jpg"
 
 ## 🚀 배포
 
-### GitHub Pages 배포
+### GitHub Pages 배포 (현재 방식)
 
-1. **GitHub 저장소 설정**:
-   - Settings → Pages → Source를 "GitHub Actions"로 설정
+이 프로젝트는 **정적 사이트 생성(SSG)**을 사용하여 GitHub Pages에 배포됩니다.
 
-2. **자동 배포**:
+1. **빌드 및 배포**:
    ```bash
-   git add .
-   git commit -m "Deploy to GitHub Pages"
-   git push origin main
-   ```
-
-3. **수동 배포**:
-   ```bash
+   # 정적 사이트 생성 및 GitHub Pages에 배포
    pnpm deploy
    ```
 
+2. **수동 배포 과정**:
+   ```bash
+   # 1. 정적 사이트 생성
+   pnpm build
+   
+   # 2. .nojekyll 파일 생성 (Jekyll 비활성화)
+   touch out/.nojekyll
+   
+   # 3. out 폴더를 gh-pages 브랜치에 푸시
+   git add out/
+   git commit -m "Deploy to GitHub Pages"
+   git subtree push --prefix out origin gh-pages
+   ```
+
+3. **GitHub Pages 설정**:
+   - Settings → Pages → Source를 "Deploy from a branch"로 설정
+   - Branch를 "gh-pages"로 선택
+
 ### 기타 플랫폼
 
-- **Vercel**: `vercel` 명령어로 배포
-- **Netlify**: `pnpm build` 후 `out` 폴더 업로드
-- **AWS S3**: 정적 사이트 호스팅 설정
+- **Vercel**: `vercel` 명령어로 배포 (정적 사이트 자동 감지)
+- **Netlify**: `out` 폴더를 드래그 앤 드롭으로 배포
+- **AWS S3**: `out` 폴더 내용을 S3 버킷에 업로드
+- **Cloudflare Pages**: GitHub 저장소 연결 후 빌드 명령어 `pnpm build`
 
 ## 🤝 기여하기
 
@@ -384,3 +431,4 @@ coverImage: "/images/cover.jpg"
 Made with ❤️ by [정태인](https://github.com/jungtaeinn)
 
 </div>
+# Trigger GitHub Actions deployment
