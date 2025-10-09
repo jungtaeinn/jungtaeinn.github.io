@@ -207,12 +207,70 @@ coverImage: "/images/posts/datadog-live-seoul/datadog_live_title.png"
 > 
 > 이 글을 읽으시는 분들께서도 위 글이 조금이나마 도움이 되기를 바랍니다. 감사합니다.
 
-### 🔗 관련 링크
+---
 
-- 📝 [LinkedIn 원본 포스트](https://www.linkedin.com/pulse/datadog-live-seoul-2024-%25EC%2597%25B0%25EC%2582%25AC-%25ED%259A%258C%25EA%25B3%25A0-%25ED%2583%259C%25EC%259D%2588-%25EC%25A0%2595-ivfnc/?trackingId=6bRwDsOHSVC2KJ7xFPV7aQ%3D%3D)
-- 🐕 [Datadog 공식 웹사이트](https://www.datadoghq.com/)
-- 🛍️ [아모레몰 공식 웹사이트](https://www.amoremall.com/)
+## 🔗 관련 링크
 
-### 🏷️ 태그
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 1.5rem 0 1rem 0;">
 
-`#datadog_live_seoul2024` `#datadog` `#amorepacific` `#amoremall` `#데이터독` `#아모레퍼시픽` `#로그분석` `#모니터링` `#성장전략`
+<div style="background: linear-gradient(135deg, #0077b5 0%, #005885 100%); border-radius: 12px; padding: 1.25rem; color: white; box-shadow: 0 4px 12px rgba(0, 119, 181, 0.2);">
+  <div style="display: flex; align-items: center; margin-bottom: 0.4rem;">
+    <span style="font-size: 1.4rem; margin-right: 0.6rem;">📝</span>
+    <h3 style="margin: 0; font-size: 1.05rem; font-weight: 600;">LinkedIn 원본 포스트</h3>
+  </div>
+  <p style="margin: 0.4rem 0; opacity: 0.9; font-size: 0.85rem;">발표 내용의 상세한 인사이트와 추가 정보를 확인하세요</p>
+  <a href="https://www.linkedin.com/pulse/datadog-live-seoul-2024-%25EC%2597%25B0%25EC%2582%25AC-%25ED%259A%258C%25EA%25B3%25A0-%25ED%2583%259C%25EC%259D%2588-%25EC%25A0%2595-ivfnc/?trackingId=6bRwDsOHSVC2KJ7xFPV7aQ%3D%3D" 
+     style="color: white; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.6rem;">
+    포스트 보기 →
+  </a>
+</div>
+
+<div style="background: linear-gradient(135deg, #632ca6 0%, #4a1f7a 100%); border-radius: 12px; padding: 1.25rem; color: white; box-shadow: 0 4px 12px rgba(99, 44, 166, 0.2);">
+  <div style="display: flex; align-items: center; margin-bottom: 0.4rem;">
+    <span style="font-size: 1.4rem; margin-right: 0.6rem;">🐕</span>
+    <h3 style="margin: 0; font-size: 1.05rem; font-weight: 600;">Datadog 공식 웹사이트</h3>
+  </div>
+  <p style="margin: 0.4rem 0; opacity: 0.9; font-size: 0.85rem;">통합 모니터링 플랫폼의 모든 기능을 체험해보세요</p>
+  <a href="https://www.datadoghq.com/" 
+     style="color: white; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.6rem;">
+    웹사이트 방문 →
+  </a>
+</div>
+
+<div style="background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%); border-radius: 12px; padding: 1.25rem; color: white; box-shadow: 0 4px 12px rgba(233, 30, 99, 0.2);">
+  <div style="display: flex; align-items: center; margin-bottom: 0.4rem;">
+    <span style="font-size: 1.4rem; margin-right: 0.6rem;">🛍️</span>
+    <h3 style="margin: 0; font-size: 1.05rem; font-weight: 600;">아모레몰 공식 웹사이트</h3>
+  </div>
+  <p style="margin: 0.4rem 0; opacity: 0.9; font-size: 0.85rem;">혁신적인 뷰티 플랫폼의 실제 서비스를 경험해보세요</p>
+  <a href="https://www.amoremall.com/" 
+     style="color: white; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.6rem;">
+    쇼핑몰 방문 →
+  </a>
+</div>
+
+</div>
+
+## 🏷️ 태그
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 0.5rem 0;">
+
+<span style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);">#datadog_live_seoul2024</span>
+
+<span style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 4px rgba(139, 92, 246, 0.2);">#datadog</span>
+
+<span style="background: linear-gradient(135deg, #ec4899, #db2777); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 4px rgba(236, 72, 153, 0.2);">#amorepacific</span>
+
+<span style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2);">#amoremall</span>
+
+<span style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);">#데이터독</span>
+
+<span style="background: linear-gradient(135deg, #ef4444, #dc2626); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);">#아모레퍼시픽</span>
+
+<span style="background: linear-gradient(135deg, #06b6d4, #0891b2); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 4px rgba(6, 182, 212, 0.2);">#로그분석</span>
+
+<span style="background: linear-gradient(135deg, #84cc16, #65a30d); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 4px rgba(132, 204, 22, 0.2);">#모니터링</span>
+
+<span style="background: linear-gradient(135deg, #f97316, #ea580c); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2);">#성장전략</span>
+
+</div>
