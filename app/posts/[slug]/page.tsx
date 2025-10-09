@@ -109,7 +109,7 @@ export default async function PostPage({ params }: PostPageProps) {
             </h1>
             
             {post.excerpt && (
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 {post.excerpt}
               </p>
             )}
