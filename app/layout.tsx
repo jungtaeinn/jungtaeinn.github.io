@@ -70,14 +70,34 @@ export const metadata: Metadata = {
   },
   other: {
     'google-adsense-account': 'ca-pub-2553484543757947',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'default',
+    'apple-mobile-web-app-title': 'jungtaeinn.github.io',
+    'msapplication-TileImage': '/images/profile.png',
+    'msapplication-TileColor': '#0f172a',
+    'theme-color': '#0f172a',
   },
   alternates: {
     canonical: 'https://jungtaeinn.github.io',
   },
   icons: {
-    icon: '/images/profile.png',
+    icon: [
+      { url: '/images/profile.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/profile.png', sizes: '16x16', type: 'image/png' },
+    ],
     shortcut: '/images/profile.png',
-    apple: '/images/profile.png',
+    apple: [
+      { url: '/images/profile.png', sizes: '180x180', type: 'image/png' },
+      { url: '/images/profile.png', sizes: '152x152', type: 'image/png' },
+      { url: '/images/profile.png', sizes: '120x120', type: 'image/png' },
+      { url: '/images/profile.png', sizes: '76x76', type: 'image/png' },
+    ],
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'jungtaeinn.github.io',
+    startupImage: '/images/profile.png',
   },
 };
 
