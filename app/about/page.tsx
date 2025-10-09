@@ -123,7 +123,7 @@ export default function AboutPage() {
                         </div>
                       </div>
                       
-                      {/* H.U.F.S - Bachelor's */}
+                      {/* HUFS - Bachelor's */}
                       <div className="border-l-2 border-muted pl-3">
                         {/* Mobile/Tablet Layout */}
                         <div className="flex items-center gap-3 xl:hidden">
