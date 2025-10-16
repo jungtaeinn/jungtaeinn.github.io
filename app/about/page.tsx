@@ -1,12 +1,95 @@
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { PersonStructuredData } from '@/components/seo/structured-data';
 import { Github, Mail, Linkedin, Instagram, MapPin, Calendar, FileText, ExternalLink } from 'lucide-react';
+
+/**
+ * About 페이지 메타데이터
+ * @description SEO 최적화를 위한 About 페이지 메타데이터
+ */
+export const metadata: Metadata = {
+  title: 'About - jungtaeinn',
+  description: 'Frontend Engineer 정태인입니다. React, Next.js, TypeScript를 활용한 프론트엔드 설계/개발을 담당하고 있습니다. Frontend 코어 설계, Monorepo 아키텍처, 성능 최적화, AI 자동화, SEO/GEO에 관심이 많습니다.',
+  keywords: [
+    '정태인',
+    'JungTaeInn',
+    'Frontend Engineer',
+    'React Developer',
+    'Next.js Developer',
+    'TypeScript',
+    'AMOREPACIFIC',
+    '아모레퍼시픽',
+    'Monorepo',
+    'Turborepo',
+    'Frontend Architecture',
+    'Performance Optimization',
+    'SEO',
+    'GEO'
+  ],
+  openGraph: {
+    title: 'About - 정태인 | Frontend Engineer',
+    description: 'Frontend Engineer 정태인입니다. React, Next.js, TypeScript를 활용한 프론트엔드 설계/개발을 담당하고 있습니다.',
+    type: 'profile',
+    url: 'https://jungtaeinn.github.io/about',
+    images: [
+      {
+        url: 'https://jungtaeinn.github.io/images/profile.png',
+        width: 400,
+        height: 400,
+        alt: 'jungtaeinn profile',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'About - 정태인 | Frontend Engineer',
+    description: 'Frontend Engineer 정태인입니다. React, Next.js, TypeScript 기반의 Frontend Engineer 입니다.',
+    images: ['https://jungtaeinn.github.io/images/profile.png'],
+  },
+  alternates: {
+    canonical: 'https://jungtaeinn.github.io/about',
+  },
+};
 
 export default function AboutPage() {
   return (
-    <div className="py-16 sm:py-20 lg:py-24">
-      <div className="max-w-4xl mx-auto">
+    <>
+      {/* 구조화된 데이터 추가 */}
+      <PersonStructuredData
+        data={{
+          name: '정태인',
+          jobTitle: 'Frontend Engineer',
+          description: 'AMOREPACIFIC에서 React, Next.js, TypeScript를 활용한 프론트엔드 개발을 담당하고 있습니다. Monorepo 아키텍처 설계, 성능 최적화, AI 자동화에 관심이 많습니다.',
+          url: 'https://jungtaeinn.github.io',
+          email: 'asgard5493@gmail.com',
+          image: 'https://jungtaeinn.github.io/images/profile.png',
+          sameAs: [
+            'https://github.com/jungtaeinn',
+            'https://www.linkedin.com/in/jungtaeinn5493',
+            'https://instagram.com/_jungtaeinn',
+          ],
+          knowsAbout: [
+            'Frontend Architecture',
+            'Frontend Development',
+            'React',
+            'Next.js',
+            'TypeScript',
+            'JavaScript',
+            'Monorepo Architecture',
+            'Turborepo',
+            'Performance Optimization',
+            'AI Automation',
+            'Web Development',
+            'Node.js',
+            'Python',
+          ],
+        }}
+      />
+
+      <div className="py-16 sm:py-20 lg:py-24">
+        <div className="max-w-4xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Profile Section */}
           <div className="lg:col-span-1">
@@ -928,7 +1011,8 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

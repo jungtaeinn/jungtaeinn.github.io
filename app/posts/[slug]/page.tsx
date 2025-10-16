@@ -5,6 +5,7 @@ import { markdownToHtml } from '@/lib/markdown';
 import { formatDate } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import CommentsSection from '@/components/comments/comments-section';
+import { BlogPostingStructuredData, BreadcrumbStructuredData } from '@/components/seo/structured-data';
 import { Calendar, Tag } from 'lucide-react';
 import Image from 'next/image';
 
@@ -84,10 +85,33 @@ export default async function PostPage({ params }: PostPageProps) {
   }
 
   const content = await markdownToHtml(post.content);
+  const postUrl = `https://jungtaeinn.github.io/posts/${slug}`;
 
   return (
-    <article className="py-16 sm:py-20 lg:py-24">
-      <div className="max-w-3xl mx-auto">
+    <>
+      {/* 구조화된 데이터 추가 */}
+      <BlogPostingStructuredData
+        data={{
+          headline: post.title,
+          description: post.excerpt,
+          author: 'jungtaeinn',
+          datePublished: post.date,
+          dateModified: post.date,
+          image: post.coverImage,
+          url: postUrl,
+          keywords: post.tags,
+        }}
+      />
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Home', url: 'https://jungtaeinn.github.io' },
+          { name: 'Posts', url: 'https://jungtaeinn.github.io/posts' },
+          { name: post.title, url: postUrl },
+        ]}
+      />
+
+      <article className="py-16 sm:py-20 lg:py-24">
+        <div className="max-w-3xl mx-auto">
         {/* Header */}
         <header className="mb-8 sm:mb-12">
           <div className="space-y-3 sm:space-y-4">
@@ -153,7 +177,8 @@ export default async function PostPage({ params }: PostPageProps) {
         <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t">
           <CommentsSection postSlug={post.slug} />
         </div>
-      </div>
-    </article>
+        </div>
+      </article>
+    </>
   );
 }
