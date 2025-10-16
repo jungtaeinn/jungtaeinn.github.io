@@ -295,6 +295,44 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="space-y-6">
+
+                {/* 코어 패키지 라이브러리 시스템 설계 및 구축 */}
+                <Card className="border-l-4 border-primary">
+                    <CardHeader>
+                        <div className="flex items-start justify-between gap-2">
+                            <CardTitle className="text-lg flex-1 min-w-0 break-normal">코어 패키지 라이브러리 시스템 설계 및 구축</CardTitle>
+                            <Badge variant="secondary" className="text-xs text-center flex-shrink-0">Team: 2 Members</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Oct 2025 - Nov 2025</p>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Tech Stack</h4>
+                            <div className="flex flex-wrap gap-1">
+                                {['Turborepo', 'React 19', 'Next.js 15', 'TypeScript', 'JavaScript', 'Pnpm', 'Changesets', 'Storybook', 'Docusaurus', 'Jest', 'Playwright'].map((tech) => (
+                                    <Badge key={tech} variant="outline" className="text-xs text-center">
+                                        {tech}
+                                    </Badge>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Key Achievements</h4>
+                            <ul className="text-sm space-y-1">
+                                <li>• 아모레퍼시픽 프론트엔드 전반에 활용 가능한 엔터프라이즈급 코어 라이브러리 10개 이상 설계 및 구축</li>
+                                <li>• 코어 라이브러리 중앙 관리를 통한 내부/외주팀 코드 품질 표준화 및 일관성 확보</li>
+                                <li>• Changesets 기반 시멘틱 버저닝 시스템 구축으로 안정적인 패키지 배포 및 의존성 관리 자동화</li>
+                                <li>• 패키지 버전 히스토리 자동 추적 및 변경 로그 자동 생성으로 투명한 릴리즈 관리</li>
+                                <li>• 도메인별 패키지 네임스페이스 전략 수립(@amoremall, @amorestore... 등: 비즈니스 도메인, @support: 범용 공통)</li>
+                                <li>• 사내 저장소(Nexus)에 코어 라이브러리 패키징 및 배포 파이프라인 구축으로 내부 시스템 간 코어 모듈 재사용성 극대화</li>
+                                <li>• @amoremall/ui-framework: Radix UI + Motion 기반 재사용 가능한 디자인 시스템</li>
+                                <li>• @amoremall/native-bridge: Android/iOS WebView 브릿지 통합 라이브러리 (201개 단위 테스트, 5가지 통신 패턴 표준화)</li>
+                                <li>• @amoremall/eslint-config, @amoremall/typescript-config 등 아모레몰 내 공통 개발 환경 설정 패키지 표준화</li>
+                                <li>• 트리셰이킹 지원 ESM/CJS 듀얼 패키지 시스템으로 번들 크기 최적화 및 범용성 확보</li>
+                            </ul>
+                        </div>
+                    </CardContent>
+                </Card>
                   
                 {/* AI 기반 아모레몰 고객센터 페이지 개발 */}
                 <Card className="border-l-4 border-primary">
