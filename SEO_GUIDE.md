@@ -359,3 +359,4 @@ export default function RootLayout({ children }) {
 **작성일**: 2025-10-16  
 **버전**: 1.0.0
 
+

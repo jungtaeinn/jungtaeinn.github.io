@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: 'jungtaeinn.github.io',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/images/profile.png',
         width: 1200,
         height: 630,
         alt: 'jungtaeinn.github.io',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'jungtaeinn.github.io',
     description: '개발자 정태인의 블로그입니다. 개발 경험과 학습 내용을 공유합니다.',
-    images: ['/images/twitter-image.jpg'],
+    images: ['/images/profile.png'],
     creator: '@jungtaeinn',
   },
   robots: {

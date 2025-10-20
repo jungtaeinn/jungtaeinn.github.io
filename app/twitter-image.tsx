@@ -20,75 +20,21 @@ export default async function Image() {
     (
       <div
         style={{
-          background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          flexDirection: 'column',
-          fontFamily: 'Inter, sans-serif',
+          backgroundColor: '#ffffff',
         }}
       >
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            textAlign: 'center',
-            color: 'white',
-          }}
-        >
-          <div
-            style={{
-              width: '150px',
-              height: '150px',
-              borderRadius: '50%',
-              background: 'white',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginBottom: '30px',
-              boxShadow: '0 15px 30px rgba(0,0,0,0.3)',
-            }}
-          >
-            <div
-              style={{
-                width: '130px',
-                height: '130px',
-                borderRadius: '50%',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '60px',
-              }}
-            >
-              👨‍💻
-            </div>
-          </div>
-          <h1
-            style={{
-              fontSize: '56px',
-              fontWeight: 'bold',
-              margin: '0 0 15px 0',
-              textShadow: '0 3px 6px rgba(0,0,0,0.3)',
-            }}
-          >
-              jungtaeinn.github.io
-          </h1>
-          <p
-            style={{
-              fontSize: '24px',
-              margin: '0',
-              opacity: 0.9,
-              fontWeight: '300',
-            }}
-          >
-            개발자로서의 경험과 학습 내용을 공유합니다
-          </p>
-        </div>
+        <img
+          src="https://jungtaeinn.github.io/images/profile.png"
+          width={600}
+          height={600}
+          alt="jungtaeinn profile"
+          style={{ objectFit: 'contain', borderRadius: 24 }}
+        />
       </div>
     ),
     {
