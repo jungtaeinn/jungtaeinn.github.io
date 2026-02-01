@@ -1,0 +1,41 @@
+graph TB
+    subgraph "ChatGPT Client"
+        ChatGPT[ChatGPT UI]
+        User[사용자]
+    end
+    
+    subgraph "amoremall-in-sdk"
+        subgraph "MCP Server (Python FastMCP)"
+            Server[FastMCP Server<br/>server/main.py]
+            Tools[Tools<br/>- get_popular_products<br/>- search_products<br/>- get_product_detail]
+            Resources[Resources<br/>Widget HTML]
+            Service[ProductService<br/>product_api.py]
+        end
+        
+        subgraph "Widget UI (React + TypeScript)"
+            Widgets[Widget Components<br/>- ProductCarousel<br/>- ProductCard]
+            Build[Vite Build<br/>Single HTML Bundle]
+            HTML[public/widgets/src/entries/<br/>*.html]
+        end
+    end
+    
+    subgraph "External"
+        Gateway[Amoremall API Gateway]
+        API[상품 정보 Data API<br/>Product Data API]
+    end
+    
+    User -->|"인기 상품 추천해줘"| ChatGPT
+    ChatGPT -->|MCP Protocol| Server
+    Server -->|Tool 호출| Tools
+    Tools -->|데이터 조회| Service
+    Service -->|API 호출| Gateway
+    Gateway -->|상품 정보 Data| API
+    API -->|상품 데이터 반환| Gateway
+    Gateway -->|상품 데이터| Service
+    Service -->|구조화된 데이터| Tools
+    Tools -->|structuredContent| ChatGPT
+    ChatGPT -->|Resource 요청| Resources
+    Resources -->|HTML 로드| HTML
+    HTML -->|Widget 렌더링| Widgets
+    Widgets -->|시각적 UI| ChatGPT
+    ChatGPT -->|결과 표시| User

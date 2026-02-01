@@ -1,0 +1,28 @@
+sequenceDiagram
+    participant User as 사용자
+    participant ChatGPT as ChatGPT
+    participant MCP as MCP Server
+    participant Service as ProductService
+    participant Gateway as Amoremall API Gateway
+    participant API as 상품 정보 Data API
+    participant Widget as Widget UI
+
+    User->>ChatGPT: "인기 상품 추천해줘"
+    ChatGPT->>MCP: list_tools() 요청
+    MCP-->>ChatGPT: Tool 목록 반환<br/>(get_popular_products 포함)
+    
+    ChatGPT->>MCP: call_tool(get_popular_products, {category: "all", limit: 6})
+    MCP->>Service: get_popular_products(category, limit)
+    Service->>Gateway: API 호출 (상품 정보 요청)
+    Gateway->>API: 상품 정보 Data 조회
+    API-->>Gateway: 상품 데이터 반환
+    Gateway-->>Service: 상품 데이터 반환
+    Service-->>MCP: 구조화된 상품 데이터
+    MCP-->>ChatGPT: structuredContent 반환<br/>(products 배열 포함)
+    
+    ChatGPT->>MCP: read_resource(ui://widget/product-carousel.html)
+    MCP-->>ChatGPT: Widget HTML 반환
+    
+    ChatGPT->>Widget: HTML 렌더링 및 데이터 주입
+    Widget-->>ChatGPT: 시각적 UI 렌더링
+    ChatGPT-->>User: 상품 캐러셀 표시
