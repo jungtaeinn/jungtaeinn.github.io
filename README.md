@@ -1,11 +1,11 @@
 # jungtaeinn.github.io
 
-> **Next.js 15** 기반 정적 사이트 생성 블로그
+> **Next.js 16** 기반 정적 사이트 생성 블로그
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.0.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.1.5-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
-[![React](https://img.shields.io/badge/React-18.0-blue?style=flat-square&logo=react)](https://react.dev/)
+[![React](https://img.shields.io/badge/React-19.0-blue?style=flat-square&logo=react)](https://react.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ## 📋 목차
@@ -23,11 +23,11 @@
 
 ## 🎯 개요
 
-`jungtaeinn.github.io`는 **Next.js 15**의 App Router와 정적 사이트 생성(SSG)을 활용하여 구축된 현대적인 개인 블로그입니다. 마크다운 기반의 포스트 작성, 반응형 디자인, 다크 모드 지원 등 개발자 친화적인 기능들을 제공합니다.
+`jungtaeinn.github.io`는 **Next.js 16**의 App Router와 정적 사이트 생성(SSG)을 활용하여 구축된 현대적인 개인 블로그입니다. 마크다운 기반의 포스트 작성, 반응형 디자인, 다크 모드 지원 등 개발자 친화적인 기능들을 제공합니다.
 
 ### ✨ 핵심 특징
 
-- 🚀 **Next.js 15 App Router** - 최신 React 서버 컴포넌트 및 정적 사이트 생성
+- 🚀 **Next.js 16 App Router** - 최신 React 서버 컴포넌트 및 정적 사이트 생성
 - 📝 **마크다운 기반** - 간편한 포스트 작성 및 관리
 - 🎨 **모던 UI/UX** - Tailwind CSS와 Radix UI 기반 세련된 디자인
 - 🌙 **다크 모드** - 시스템 설정 기반 자동 테마 전환
@@ -60,8 +60,8 @@
 ## 🛠 기술 스택
 
 ### Frontend
-- **[Next.js 15.0.0](https://nextjs.org/)** - React 프레임워크 (App Router, SSG)
-- **[React 18](https://react.dev/)** - UI 라이브러리
+- **[Next.js 16.1.5](https://nextjs.org/)** - React 프레임워크 (App Router, SSG)
+- **[React 19.2.4](https://react.dev/)** - UI 라이브러리
 - **[TypeScript 5](https://www.typescriptlang.org/)** - 타입 시스템
 - **[Tailwind CSS 3.3.0](https://tailwindcss.com/)** - CSS 프레임워크
 
@@ -70,8 +70,8 @@
   - `@radix-ui/react-dialog` - 모달 및 다이얼로그
   - `@radix-ui/react-dropdown-menu` - 드롭다운 메뉴
   - `@radix-ui/react-toast` - 토스트 알림
-- **[Lucide React 0.303.0](https://lucide.dev/)** - 아이콘 라이브러리
-- **[Framer Motion 10.16.16](https://www.framer.com/motion/)** - 애니메이션
+- **[Lucide React 0.563.0](https://lucide.dev/)** - 아이콘 라이브러리
+- **[Framer Motion 12.29.2](https://www.framer.com/motion/)** - 애니메이션
 
 ### 콘텐츠 관리
 - **[Gray Matter 4.0.3](https://github.com/jonschlinkert/gray-matter)** - Frontmatter 파싱
@@ -86,7 +86,7 @@
 - **[date-fns 2.30.0](https://date-fns.org/)** - 날짜 유틸리티
 
 ### 개발 도구
-- **[ESLint 8](https://eslint.org/)** - 코드 린팅
+- **[ESLint 9.39.2](https://eslint.org/)** - 코드 린팅
 - **[PostCSS 8](https://postcss.org/)** - CSS 후처리
 - **[Autoprefixer 10.0.1](https://github.com/postcss/autoprefixer)** - CSS 벤더 프리픽스
 - **[Tailwind Typography 0.5.19](https://tailwindcss.com/docs/typography-plugin)** - 타이포그래피 플러그인

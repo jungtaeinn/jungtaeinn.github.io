@@ -379,6 +379,40 @@ export default function AboutPage() {
                 </div>
                 <div className="space-y-6">
 
+                {/* OpenAI Apps SDK 아모레몰 프로토타입 설계/구축 */}
+                <Card className="border-l-4 border-primary">
+                    <CardHeader>
+                        <div className="flex items-start justify-between gap-2">
+                            <CardTitle className="text-lg flex-1 min-w-0 break-normal">OpenAI Apps SDK 아모레몰 앱 설계 및 구축</CardTitle>
+                            <Badge variant="secondary" className="text-xs text-center flex-shrink-0">ChatGPT Integration</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Nov 2025</p>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Tech Stack</h4>
+                            <div className="flex flex-wrap gap-1">
+                                {['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'Python', 'FastMCP', 'FastAPI', 'Pydantic', 'OpenAI Apps SDK', 'MCP'].map((tech) => (
+                                    <Badge key={tech} variant="outline" className="text-xs text-center">
+                                        {tech}
+                                    </Badge>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Key Achievements</h4>
+                            <ul className="text-sm space-y-1">
+                                <li>• OpenAI Apps SDK(ChatGPT 연동) 기반 아모레몰 상품 추천/검색 프로토타입 설계 및 구축</li>
+                                <li>• MCP(Model Context Protocol) 기반 서버 구현으로 ChatGPT와 실시간 데이터 통신 구현</li>
+                                <li>• React 19 + Vite 기반 Widget 컴포넌트 개발 (ProductCarousel, ProductCard, CartSummary)</li>
+                                <li>• FastMCP + FastAPI 기반 MCP 서버 구현으로 상품 검색/조회/추천 Tool 제공</li>
+                                <li>• ChatGPT 대화 컨텍스트 내 아모레몰 상품 정보 자연어 기반 조회 기능 구현</li>
+                                <li>• 개발/운영 환경 분리를 위한 Mock 데이터 시스템 및 OpenAI Bridge Hook 설계</li>
+                            </ul>
+                        </div>
+                    </CardContent>
+                </Card>
+
                 {/* 코어 패키지 라이브러리 시스템 설계 및 구축 */}
                 <Card className="border-l-4 border-primary">
                     <CardHeader>
@@ -411,6 +445,7 @@ export default function AboutPage() {
                                 <li>• @amoremall/ui-framework: Radix UI + Motion 기반 재사용 가능한 디자인 시스템</li>
                                 <li>• @amoremall/native-bridge: Android/iOS WebView 브릿지 통합 라이브러리 (201개 단위 테스트, 5가지 통신 패턴 표준화)</li>
                                 <li>• @amoremall/eslint-config, @amoremall/typescript-config 등 아모레몰 내 공통 개발 환경 설정 패키지 표준화</li>
+                                <li>• Changesets 기반 시멘틱 버저닝 시스템 구축으로 안정적인 패키지 배포 및 의존성 관리 자동화</li>
                                 <li>• 트리셰이킹 지원 ESM/CJS 듀얼 패키지 시스템으로 번들 크기 최적화 및 범용성 확보</li>
                             </ul>
                         </div>
