@@ -181,7 +181,7 @@ GEO에는 아직 정확한 정답은 없기에 연구와 프로젝트를 근간�
     <h3 style="margin: 0; font-size: 1.05rem; font-weight: 600;">LinkedIn 원본 포스트</h3>
   </div>
   <p style="margin: 0.4rem 0; opacity: 0.9; font-size: 0.85rem;">GEO 전사 플랫폼 확대의 상세한 인사이트와 추가 정보를 확인하세요</p>
-  <a href="https://www.linkedin.com/pulse/geogenerative-engine-optimization-%25EC%25A0%2584%25EC%2582%25AC-%25ED%2594%258C%25EB%259E%25AB%25ED%258F%25BC-%25ED%2599%2595%25EB%258C%2580%25EB%25A5%25BC-%25EC%259C%2584%25ED%2595%259C-%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25EC%25B3%2590-%25EB%25B0%258F-%25ED%2583%259C%25EC%259D%2588-%25EC%25A0%2595-l7hmc/?trackingId=n8Qn0GIkTdur1ugbtdeFug%3D%3D" 
+  <a href="https://www.linkedin.com/pulse/geogenerative-engine-optimization-%EC%A0%84%EC%82%AC-%ED%94%8C%EB%9E%AB%ED%8F%BC-%ED%99%95%EB%8C%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90-%EB%B0%8F-%ED%83%9C%EC%9D%B8-%EC%A0%95-l7hmc/?trackingId=wf5kZPZFC0LgDutp%2FcLEdA%3D%3D" 
      target="_blank"
      rel="noopener noreferrer"
      style="color: white; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.6rem;">

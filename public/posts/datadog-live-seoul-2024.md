@@ -219,7 +219,7 @@ coverImage: "/images/posts/datadog-live-seoul/datadog_live_title.png"
     <h3 style="margin: 0; font-size: 1.05rem; font-weight: 600;">LinkedIn 원본 포스트</h3>
   </div>
   <p style="margin: 0.4rem 0; opacity: 0.9; font-size: 0.85rem;">발표 내용의 상세한 인사이트와 추가 정보를 확인하세요</p>
-  <a href="https://www.linkedin.com/pulse/datadog-live-seoul-2024-%25EC%2597%25B0%25EC%2582%25AC-%25ED%259A%258C%25EA%25B3%25A0-%25ED%2583%259C%25EC%259D%2588-%25EC%25A0%2595-ivfnc/?trackingId=6bRwDsOHSVC2KJ7xFPV7aQ%3D%3D" 
+  <a href="https://www.linkedin.com/pulse/datadog-live-seoul-2024-%EC%97%B0%EC%82%AC-%ED%9A%8C%EA%B3%A0-%ED%83%9C%EC%9D%B8-%EC%A0%95-ivfnc/?trackingId=6bRwDsOHSVC2KJ7xFPV7aQ%3D%3D" 
      style="color: white; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.6rem;">
     포스트 보기 →
   </a>

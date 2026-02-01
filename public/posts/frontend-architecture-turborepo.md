@@ -275,7 +275,7 @@ AI Agent를 활용하여 다음과 같은 스킬을 적용합니다:
     <h3 style="margin: 0; font-size: 1.05rem; font-weight: 600;">LinkedIn 원본 포스트</h3>
   </div>
   <p style="margin: 0.4rem 0; opacity: 0.9; font-size: 0.85rem;">프론트엔드 아키텍처 설계의 상세한 인사이트와 추가 정보를 확인하세요</p>
-  <a href="https://www.linkedin.com/pulse/frontend-architecture-turborepo-%25ED%2583%259C%25EC%259D%2588-%25EC%25A0%2595-ss2kc/?trackingId=WBVI9sc0TbeGtTKRDmXhhA%3D%3D" 
+  <a href="https://www.linkedin.com/pulse/frontend-architecture-turborepo-%ED%83%9C%EC%9D%B8-%EC%A0%95-ss2kc/?trackingId=WBVI9sc0TbeGtTKRDmXhhA%3D%3D" 
      target="_blank"
      rel="noopener noreferrer"
      style="color: white; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.6rem;">
