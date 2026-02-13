@@ -379,12 +379,58 @@ export default function AboutPage() {
                 </div>
                 <div className="space-y-6">
 
+                {/* GEO 전사 플랫폼 아키텍처 설계 및 구축 */}
+                <Card className="border-l-4 border-primary">
+                    <CardHeader>
+                        <div className="flex items-start justify-between gap-2">
+                            <CardTitle className="text-lg flex-1 min-w-0 break-normal">GEO 전사 플랫폼 아키텍처 설계 및 구축</CardTitle>
+                            <Badge variant="secondary" className="text-xs text-center flex-shrink-0">Team: 3 Members</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Dec 2025 - Feb 2026</p>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Tech Stack</h4>
+                            <div className="flex flex-wrap gap-1">
+                                {['React', 'Next.js', 'TypeScript', 'Schema.org', 'AI Automation', 'Python', 'E-E-A-T', 'CEP', 'SEO', 'GEO'].map((tech) => (
+                                    <Badge key={tech} variant="outline" className="text-xs text-center">
+                                        {tech}
+                                    </Badge>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Key Achievements</h4>
+                            <ul className="text-sm space-y-1">
+                                <li>• E-E-A-T(Experience, Expertise, Authoritativeness, Trustworthiness)와 CEP(Creator Economy Platform) 원칙 기반 고품질 GEO BestPractice 구성</li>
+                                <li>• 고객 리뷰 데이터 키워드 분석을 통한 객관적 정보 기반 GEO 컨텐츠 자동 생성 시스템 구축</li>
+                                <li>• Schema.org 구조화 데이터를 활용한 기술적 접근으로 AI 검색 엔진 최적화 구현</li>
+                                <li>• AI 프롬프트 기반 자동화 시스템으로 상품/이벤트/FAQ 정보에 대한 GEO 컨텐츠 자동 생성</li>
+                                <li>• BestPractice와 AI 프롬프트를 기술자산화하여 버저닝 관리로 유지보수성 확보 및 품질 업그레이드 체계 구축</li>
+                                <li>• 전사 플랫폼 확대를 위한 확장 가능한 아키텍처 설계로 타 브랜드 적용 시 유지보수성 확보</li>
+                                <li>• 단순 상품정보 API 조합 방식 대신 고품질 GEO 컨텐츠 구성으로 AI 검색 엔진 인용 및 유입 최적화 달성</li>
+                            </ul>
+                        </div>
+                        <div className="pt-2">
+                            <a 
+                                href="https://jungtaeinn.github.io/posts/geo-platform-architecture/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                            >
+                                <ExternalLink className="h-4 w-4" />
+                                GEO 플랫폼 아키텍처 상세 포스팅 보기
+                            </a>
+                        </div>
+                    </CardContent>
+                </Card>
+
                 {/* OpenAI Apps SDK 아모레몰 프로토타입 설계/구축 */}
                 <Card className="border-l-4 border-primary">
                     <CardHeader>
                         <div className="flex items-start justify-between gap-2">
                             <CardTitle className="text-lg flex-1 min-w-0 break-normal">OpenAI Apps SDK 아모레몰 앱 설계 및 구축</CardTitle>
-                            <Badge variant="secondary" className="text-xs text-center flex-shrink-0">ChatGPT Integration</Badge>
+                            <Badge variant="secondary" className="text-xs text-center flex-shrink-0">Team: 2 Members</Badge>
                         </div>
                         <p className="text-sm text-muted-foreground">Nov 2025</p>
                     </CardHeader>
@@ -392,7 +438,7 @@ export default function AboutPage() {
                         <div className="space-y-2">
                             <h4 className="font-semibold text-sm">Tech Stack</h4>
                             <div className="flex flex-wrap gap-1">
-                                {['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'Python', 'FastMCP', 'FastAPI', 'Pydantic', 'OpenAI Apps SDK', 'MCP'].map((tech) => (
+                                {['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'Python', 'FastMCP', 'FastAPI', 'Pydantic', 'OpenAI Apps SDK', 'ACP'].map((tech) => (
                                     <Badge key={tech} variant="outline" className="text-xs text-center">
                                         {tech}
                                     </Badge>
@@ -409,6 +455,17 @@ export default function AboutPage() {
                                 <li>• ChatGPT 대화 컨텍스트 내 아모레몰 상품 정보 자연어 기반 조회 기능 구현</li>
                                 <li>• 개발/운영 환경 분리를 위한 Mock 데이터 시스템 및 OpenAI Bridge Hook 설계</li>
                             </ul>
+                        </div>
+                        <div className="pt-2">
+                            <a 
+                                href="https://jungtaeinn.github.io/posts/amoremall-in-sdk-chatgpt-apps/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
+                            >
+                                <ExternalLink className="h-4 w-4" />
+                                ChatGPT Apps SDK 아모레몰 통합 상세 포스팅 보기
+                            </a>
                         </div>
                     </CardContent>
                 </Card>
