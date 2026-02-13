@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-02-13
+
+### Added
+- About 페이지 최신 이력에 GEO 전사 플랫폼 아키텍처 프로젝트 카드 추가
+  - E-E-A-T, CEP, AI 자동화 기반 GEO BestPractice 및 성과 요약
+  - GEO 플랫폼 아키텍처 상세 포스팅 링크 연결
+- OpenAI Apps SDK 아모레몰 앱 카드에 상세 포스팅 링크 연결
+  - ChatGPT Apps SDK 아모레몰 통합 포스팅 링크 추가
+
 ## [1.1.0] - 2026-02-01
 
 ### Added
@@ -88,19 +97,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
-- Agent Skills 문서 추가 - 블로그 포스트 작성 스킬
-- Turborepo 모노레포 아키텍처 블로그 포스트 추가
-- About 페이지에 OpenAI Apps SDK 프로젝트 경력 추가
+(현재 예정된 변경 사항 없음)
 
-### Changed
-- React 19 및 Next.js 16 업데이트
-- ESLint 9 마이그레이션
-- GitHub Actions Node.js 버전을 25로 업데이트
-
-### Removed
-- 불필요한 포스팅 파일 제거
-
+[1.2.0]: https://github.com/jungtaeinn/jungtaeinn.github.io/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/jungtaeinn/jungtaeinn.github.io/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/jungtaeinn/jungtaeinn.github.io/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/jungtaeinn/jungtaeinn.github.io/releases/tag/v1.0.0
