@@ -1,73 +1,34 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Users, Calendar } from 'lucide-react';
+import { Users } from 'lucide-react';
+import { getVisitorCount } from '@/lib/visitor';
 
-interface VisitorStats {
-  todayVisitors: number;
-  totalVisitors: number;
-  lastVisit: string;
-}
-
+/**
+ * 방문자 수 표시 컴포넌트
+ * @description 공유된 getVisitorCount를 통해 전체 방문자 수를 표시합니다.
+ * API 실패 시 미노출됩니다.
+ */
 export default function VisitorCounter() {
-  const [stats, setStats] = useState<VisitorStats>({
-    todayVisitors: 0,
-    totalVisitors: 0,
-    lastVisit: '',
-  });
+  const [count, setCount] = useState<number | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const updateVisitorStats = () => {
-      const today = new Date().toDateString();
-      const lastVisit = localStorage.getItem('lastVisit');
-      const totalVisitors = parseInt(localStorage.getItem('totalVisitors') || '0');
-      const todayVisitors = parseInt(localStorage.getItem('todayVisitors') || '0');
-      const todayKey = `visitors_${today}`;
-
-      let newTotalVisitors = totalVisitors;
-      let newTodayVisitors = todayVisitors;
-
-      // 오늘 첫 방문인지 확인
-      if (lastVisit !== today) {
-        // 새로운 날짜이므로 오늘 방문자 수 초기화
-        newTodayVisitors = 1;
-        newTotalVisitors += 1;
-        
-        // 오늘 방문자 수 저장
-        localStorage.setItem('todayVisitors', newTodayVisitors.toString());
-        localStorage.setItem('totalVisitors', newTotalVisitors.toString());
-        localStorage.setItem('lastVisit', today);
-        localStorage.setItem(todayKey, '1');
-      } else {
-        // 오늘 이미 방문했는지 확인
-        const hasVisitedToday = localStorage.getItem(todayKey);
-        if (!hasVisitedToday) {
-          newTodayVisitors += 1;
-          newTotalVisitors += 1;
-          
-          localStorage.setItem('todayVisitors', newTodayVisitors.toString());
-          localStorage.setItem('totalVisitors', newTotalVisitors.toString());
-          localStorage.setItem(todayKey, '1');
-        }
+    getVisitorCount().then((value) => {
+      if (value !== null) {
+        setCount(value);
+        setIsVisible(true);
       }
-
-      setStats({
-        todayVisitors: newTodayVisitors,
-        totalVisitors: newTotalVisitors,
-        lastVisit: today,
-      });
-    };
-
-    updateVisitorStats();
+    });
   }, []);
 
+  if (!isVisible || count === null) return null;
+
   return (
-    <div className="flex items-center justify-center gap-2 text-xs">
-      <Users className="h-3 w-3 text-cyan-400" />
-      <span className="text-cyan-400 font-medium">Total {stats.totalVisitors.toLocaleString('ko-KR')}</span>
-      <span className="text-cyan-400">•</span>
-      <Calendar className="h-3 w-3 text-green-400" />
-      <span className="text-green-400 font-medium">Today {stats.todayVisitors.toLocaleString('ko-KR')}</span>
+    <div className="inline-flex items-center gap-1.5 text-xs text-muted-foreground/70">
+      <Users className="h-3 w-3" />
+      <span className="tabular-nums">{count.toLocaleString('ko-KR')}</span>
+      <span>visitors</span>
     </div>
   );
 }

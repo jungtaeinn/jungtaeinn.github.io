@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
+import VisitorCounter from '@/components/ui/visitor-counter';
 
 /**
  * 홈페이지 히어로 섹션 컴포넌트
@@ -35,14 +36,14 @@ export default function HeroSection() {
         </h1>
 
         {/* 서브타이틀 */}
-        <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto">
+        <p className="text-sm text-muted-foreground mb-2 max-w-md mx-auto">
           My name is Jung TaeInn. I&apos;m a Frontend Engineer based in Seoul, Korea.
         </p>
 
-        {/* 인스피레이션 문구 */}
-        {/*<blockquote className="text-lg font-medium italic text-foreground mb-7">*/}
-        {/*  &ldquo;I think it is possible for ordinary people to choose to be extraordinary.&rdquo;*/}
-        {/*</blockquote>*/}
+        {/* 방문자 수 */}
+        <div className="mb-4">
+          <VisitorCounter />
+        </div>
 
         {/* 소셜 미디어 링크 */}
         <div className="flex justify-center space-x-4">

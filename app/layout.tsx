@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import ScrollToTop from '@/components/ui/scroll-to-top';
+import VisitorTracker from '@/components/ui/visitor-tracker';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -133,6 +134,7 @@ export default function RootLayout({
           </main>
           <Footer />
           <ScrollToTop />
+          <VisitorTracker />
         </div>
       </body>
     </html>
