@@ -2,10 +2,10 @@
 
 > **Next.js 16** 기반 정적 사이트 생성 블로그
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.1.5-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
-[![React](https://img.shields.io/badge/React-19.0-blue?style=flat-square&logo=react)](https://react.dev/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![React](https://img.shields.io/badge/React-19.2-blue?style=flat-square&logo=react)](https://react.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ## 📋 목차
@@ -60,10 +60,10 @@
 ## 🛠 기술 스택
 
 ### Frontend
-- **[Next.js 16.1.5](https://nextjs.org/)** - React 프레임워크 (App Router, SSG)
+- **[Next.js 16.1.6](https://nextjs.org/)** - React 프레임워크 (App Router, SSG)
 - **[React 19.2.4](https://react.dev/)** - UI 라이브러리
-- **[TypeScript 5](https://www.typescriptlang.org/)** - 타입 시스템
-- **[Tailwind CSS 3.3.0](https://tailwindcss.com/)** - CSS 프레임워크
+- **[TypeScript 5.8](https://www.typescriptlang.org/)** - 타입 시스템
+- **[Tailwind CSS 3.4](https://tailwindcss.com/)** - CSS 프레임워크
 
 ### UI 컴포넌트
 - **[Radix UI](https://www.radix-ui.com/)** - 접근성 우선 컴포넌트
@@ -71,7 +71,7 @@
   - `@radix-ui/react-dropdown-menu` - 드롭다운 메뉴
   - `@radix-ui/react-toast` - 토스트 알림
 - **[Lucide React 0.563.0](https://lucide.dev/)** - 아이콘 라이브러리
-- **[Framer Motion 12.29.2](https://www.framer.com/motion/)** - 애니메이션
+- **[Framer Motion 12.34](https://www.framer.com/motion/)** - 애니메이션
 
 ### 콘텐츠 관리
 - **[Gray Matter 4.0.3](https://github.com/jonschlinkert/gray-matter)** - Frontmatter 파싱
@@ -80,16 +80,17 @@
 - **[Remark HTML 16.0.1](https://github.com/remarkjs/remark-html)** - HTML 변환
 
 ### 유틸리티
-- **[clsx 2.0.0](https://github.com/lukeed/clsx)** - 조건부 클래스명
-- **[tailwind-merge 2.2.0](https://github.com/dcastil/tailwind-merge)** - Tailwind 클래스 병합
-- **[class-variance-authority 0.7.0](https://github.com/joe-bell/cva)** - 컴포넌트 변형 관리
-- **[date-fns 2.30.0](https://date-fns.org/)** - 날짜 유틸리티
+- **[clsx 2.1](https://github.com/lukeed/clsx)** - 조건부 클래스명
+- **[tailwind-merge 2.6](https://github.com/dcastil/tailwind-merge)** - Tailwind 클래스 병합
+- **[class-variance-authority 0.7](https://github.com/joe-bell/cva)** - 컴포넌트 변형 관리
+- **[date-fns 4.1](https://date-fns.org/)** - 날짜 유틸리티
 
 ### 개발 도구
-- **[ESLint 9.39.2](https://eslint.org/)** - 코드 린팅
-- **[PostCSS 8](https://postcss.org/)** - CSS 후처리
-- **[Autoprefixer 10.0.1](https://github.com/postcss/autoprefixer)** - CSS 벤더 프리픽스
+- **[ESLint 9](https://eslint.org/)** - 코드 린팅
+- **[PostCSS 8.5](https://postcss.org/)** - CSS 후처리
+- **[Autoprefixer 10.4](https://github.com/postcss/autoprefixer)** - CSS 벤더 프리픽스
 - **[Tailwind Typography 0.5.19](https://tailwindcss.com/docs/typography-plugin)** - 타이포그래피 플러그인
+- **[Puppeteer 24](https://pptr.dev/)** - Mermaid CLI 등 헤드리스 브라우저 (개발 도구)
 
 ## 📁 프로젝트 구조
 
@@ -162,9 +163,9 @@ jungtaeinn.github.io/
 
 ### 📋 사전 요구사항
 
-- **Node.js** 18.0.0 이상
-- **pnpm** 8.0.0 이상
-- **Git** 2.0.0 이상
+- **Node.js** 18.x 이상 (권장: 20.x LTS)
+- **pnpm** 8.x 이상
+- **Git** 2.x 이상
 
 ### 🔧 설치 및 실행
 
@@ -194,10 +195,10 @@ pnpm dev
 #### 4. 프로덕션 빌드
 
 ```bash
-# 정적 사이트 생성 (GitHub Pages용)
+# 정적 사이트 생성 (output: 'export' 설정으로 next build 시 out/ 생성)
 pnpm build
 
-# 또는 export 명령어 사용
+# export 스크립트는 위와 동일하게 next build를 실행합니다 (Next.js 16+)
 pnpm export
 ```
 
@@ -365,7 +366,7 @@ coverImage: "/images/cover.jpg"
 
 2. **수동 배포 과정**:
    ```bash
-   # 1. 정적 사이트 생성
+   # 1. 정적 사이트 생성 (next.config.js의 output: 'export'로 out/ 생성)
    pnpm build
    
    # 2. .nojekyll 파일 생성 (Jekyll 비활성화)
@@ -431,6 +432,3 @@ coverImage: "/images/cover.jpg"
 Made with ❤️ by [정태인](https://github.com/jungtaeinn)
 
 </div>
-# Trigger GitHub Actions deployment
-# Final merge confirmation
-# Trigger GitHub Actions workflow
