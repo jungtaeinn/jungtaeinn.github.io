@@ -37,7 +37,7 @@ export default function HeroSection() {
 
         {/* 서브타이틀 */}
         <p className="text-sm text-muted-foreground mb-2 max-w-md mx-auto">
-          My name is Jung TaeInn. I&apos;m a Frontend Engineer based in Seoul, Korea.
+          Senior Frontend Engineer | AI Engineer | Speaker at Datadog
         </p>
 
         {/* 방문자 수 */}
