@@ -4,7 +4,6 @@ import { getPostData, getAllPostSlugs } from '@/lib/posts';
 import { markdownToHtml } from '@/lib/markdown';
 import { formatDate } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
-import CommentsSection from '@/components/comments/comments-section';
 import { BlogPostingStructuredData, BreadcrumbStructuredData } from '@/components/seo/structured-data';
 import { Calendar, Tag } from 'lucide-react';
 import Image from 'next/image';
@@ -173,10 +172,6 @@ export default async function PostPage({ params }: PostPageProps) {
           dangerouslySetInnerHTML={{ __html: content }}
         />
 
-        {/* Comments Section */}
-        <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t">
-          <CommentsSection postSlug={post.slug} />
-        </div>
         </div>
       </article>
     </>
