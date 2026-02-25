@@ -259,9 +259,10 @@ export default function AboutPage() {
                     <div className="space-y-2">
                       <h4 className="font-semibold">Tech Stack</h4>
                       <div className="flex flex-wrap gap-1">
-                        {['TypeScript', 'React', 'Next.js', 'JavaScript', 'Node.js', 'Python',
-                          'TanStack', 'Zustand', 'Redux', 'Mobx', 'Tailwind', 'Pnpm',
-                          'Docker', 'k8s', 'Webpack', 'Babel', 'Selenium', 'GAN', 'Java'].map((tech) => (
+                        {['Architecture Design', 'DT', 'AX', 'AI', 'TypeScript', 'React', 'Next.js', 'JavaScript', 'Node.js', 'Python', 'Java',
+                          'Vite', 'TanStack', 'Zustand', 'Redux', 'MobX',
+                          'Tailwind CSS', 'Radix UI', 'OpenAI Apps SDK', 'ACP', 'MCP', 'Schema.org',
+                          'Jest', 'Playwright', 'Docker', 'k8s', 'Pnpm'].map((tech) => (
                           <Badge key={tech} variant="secondary" className="text-xs text-center">
                             {tech}
                           </Badge>
@@ -273,9 +274,9 @@ export default function AboutPage() {
                     <div className="space-y-2">
                       <h4 className="font-semibold">Tools & Services</h4>
                       <div className="flex flex-wrap gap-1">
-                        {['Claude Code', 'Cursor AI', 'Github Copilot', 'Intellij', 'Github', 'Gitlab', 'Jenkins',
-                          'Jira', 'Wiki', 'Docusaurus', 'Storybook', 'JSDoc', 'Eslint', 'Prettier',
-                          'SEO', 'GEO', 'GA', 'Datadog', 'Turborepo', 'Monorepo'].map((tool) => (
+                        {['Claude Code', 'Cursor AI', 'Codex', 'Github Copilot', 'Intellij', 'Github', 'Gitlab', 'Jenkins', 'Figma MCP',
+                          'Jira', 'Wiki', 'Docusaurus', 'Storybook', 'Changesets', 'JSDoc', 'Eslint', 'Prettier',
+                          'SEO', 'GEO', 'GA', 'Datadog', 'Sentry', 'Splunk', 'Turborepo', 'Monorepo', 'n8n'].map((tool) => (
                           <Badge key={tool} variant="outline" className="text-xs text-center">
                             {tool}
                           </Badge>
@@ -287,7 +288,7 @@ export default function AboutPage() {
                     <div className="space-y-2">
                       <h4 className="font-semibold">Areas of Interest</h4>
                       <div className="flex flex-wrap gap-1">
-                        {['Frontend Architecture', 'Frontend Optimization', 'Monorepo', 'AI Automation', 'Recommendation System', 'Digital Transformation'].map((field) => (
+                        {['Frontend Architecture', 'Frontend Optimization', 'Monorepo', 'AX', 'AI Automation', 'Recommendation System', 'Digital Transformation'].map((field) => (
                           <Badge key={field} variant="default" className="text-xs text-center">
                             {field}
                           </Badge>
