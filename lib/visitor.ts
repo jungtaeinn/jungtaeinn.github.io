@@ -2,7 +2,9 @@ const COUNTAPI_BASE = 'https://countapi.mileshilliard.com/api/v1';
 const COUNTER_KEY_TOTAL = 'jungtaeinn-github-io-total-visitors';
 
 function getTodayKey(): string {
-  const today = new Date().toISOString().slice(0, 10);
+  const now = new Date();
+  const kst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+  const today = kst.toISOString().slice(0, 10);
   return `jungtaeinn-github-io-visitors-${today}`;
 }
 
