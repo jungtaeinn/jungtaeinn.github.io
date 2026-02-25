@@ -10,12 +10,14 @@ import { Github, Mail, Linkedin, Instagram, MapPin, Calendar, FileText, External
  * @description SEO 최적화를 위한 About 페이지 메타데이터
  */
 export const metadata: Metadata = {
-  title: 'About - jungtaeinn | Frontend Engineer',
-  description: 'Frontend Engineer 정태인입니다. React, Next.js, TypeScript를 활용한 프론트엔드 설계/개발을 담당하고 있습니다. Frontend 코어 설계, Monorepo 아키텍처, 성능 최적화, AI 자동화, SEO/GEO에 관심이 많습니다.',
+  title: 'About - jungtaeinn | Senior Frontend Engineer | AI Engineer | Speaker at Datadog',
+  description: 'Senior Frontend & AI Engineer 정태인입니다. React, Next.js, TypeScript를 활용한 프론트엔드 설계/개발과 AI 기반 자동화 시스템 구축을 담당하고 있습니다. Frontend 코어 설계, Monorepo 아키텍처, 성능 최적화, AI 자동화, SEO/GEO에 관심이 많습니다.',
   keywords: [
     '정태인',
     'JungTaeInn',
-    'Frontend Engineer',
+    'Senior Frontend Engineer',
+    'AI Engineer',
+    'Speaker at Datadog',
     'React Developer',
     'Next.js Developer',
     'TypeScript',
@@ -71,6 +73,9 @@ export default function AboutPage() {
             'https://instagram.com/_jungtaeinn',
           ],
           knowsAbout: [
+            '정태인',
+            '프론트엔드',
+            '프론트엔드 개발자',
             'Frontend Architecture',
             'Frontend Development',
             'React',
