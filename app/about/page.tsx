@@ -112,7 +112,7 @@ export default function AboutPage() {
                     />
                   </div>
                   <CardTitle className="text-2xl">JungTaeInn</CardTitle>
-                  <p className="text-muted-foreground">Frontend Engineer</p>
+                  <p className="text-muted-foreground">Senior Frontend Engineer</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center gap-2 text-sm">
@@ -140,7 +140,7 @@ export default function AboutPage() {
                           />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="font-medium text-sm">Frontend Engineer</div>
+                          <div className="font-medium text-sm">Senior Frontend Engineer</div>
                           <div className="text-xs text-muted-foreground">AMOREPACIFIC</div>
                           <div className="text-xs text-muted-foreground">2020.07 - Present</div>
                         </div>
@@ -379,7 +379,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h2 className="text-2xl font-bold text-primary">AMOREPACIFIC</h2>
-                    <p className="text-sm text-muted-foreground">2020.07 - Present | Frontend Engineer</p>
+                    <p className="text-sm text-muted-foreground">2020.07 - Present | Senior Frontend Engineer | AI Engineer</p>
                   </div>
                 </div>
                 <div className="space-y-6">
