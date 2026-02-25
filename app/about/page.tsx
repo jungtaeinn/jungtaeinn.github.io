@@ -385,6 +385,40 @@ export default function AboutPage() {
                 </div>
                 <div className="space-y-6">
 
+                {/* 라벨 기반 브랜치 배포전략 설계 및 구축 */}
+                <Card className="border-l-4 border-primary">
+                    <CardHeader>
+                        <div className="flex items-start justify-between gap-2">
+                            <CardTitle className="text-lg flex-1 min-w-0 break-normal">라벨 기반 브랜치 배포전략 설계 및 구축</CardTitle>
+                            <Badge variant="secondary" className="text-xs text-center flex-shrink-0">Team: 1 Member</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Feb 2026</p>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Tech Stack</h4>
+                            <div className="flex flex-wrap gap-1">
+                                {['GitLab CI/CD', 'Shell Script', 'n8n', 'Power Automate', 'Docker'].map((tech) => (
+                                    <Badge key={tech} variant="outline" className="text-xs text-center">
+                                        {tech}
+                                    </Badge>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Key Achievements</h4>
+                            <ul className="text-sm space-y-1">
+                                <li>• MR 라벨 기반 배포 파이프라인 설계 및 구현으로, 기존 하나의 기능 배포에 MR 3~4개 필요하던 프로세스를 MR 1개 + 라벨 방식으로 개선</li>
+                                <li>• 라벨 토글 기반의 선언적 배포 전략 도입으로, 라벨 부착/제거만으로 develop·staging 환경의 배포 스코프를 유연하게 재구성할 수 있는 동적 브랜치 오케스트레이션 체계 구현</li>
+                                <li>• 통합 브랜치 자동조립 시스템 구현: deploy::develop, deploy::stage, deploy::ready 라벨이 부착된 MR들을 대상으로 master 기반 일회용 통합 브랜치를 자동 생성하는 Shell Script 개발</li>
+                                <li>• 라벨 단위의 배포 스코프 관리로 환경별(개발/스테이지/운영) 독립적 배포 제어 구현 및 배포 충돌 리스크 최소화</li>
+                                <li>• n8n 배포 알림 워크플로우 구축 — 운영 배포 시 CI에서 n8n 웹훅을 호출하여 Feature/Fix 비율 분석, MR 목록 분류, 충돌 정보를 카드 형태로 제공하는 배포 리포트를 Teams 자동 전송</li>
+                                <li>• 기존 수작업 기반 배포 프로세스를 자동화하여 배포 리드타임 단축 및 휴먼 에러 제거</li>
+                            </ul>
+                        </div>
+                    </CardContent>
+                </Card>
+
                 {/* GEO 전사 플랫폼 아키텍처 설계 및 구축 */}
                 <Card className="border-l-4 border-primary">
                     <CardHeader>
