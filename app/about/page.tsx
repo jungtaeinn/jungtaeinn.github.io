@@ -384,6 +384,43 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="space-y-6">
+                  
+                {/* RAG 기반 코드리뷰 AI 에이전트 설계 및 개발 */}
+                <Card className="border-l-4 border-primary">
+                    <CardHeader>
+                        <div className="flex items-start justify-between gap-2">
+                            <CardTitle className="text-lg flex-1 min-w-0 break-normal">RAG 기반 코드리뷰 AI 에이전트 설계 및 개발</CardTitle>
+                            <Badge variant="secondary" className="text-xs text-center flex-shrink-0">Team: 1 Member</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Feb 2026</p>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Tech Stack</h4>
+                            <div className="flex flex-wrap gap-1">
+                                {['TypeScript', 'Azure OpenAI (GPT-5)', 'Qdrant', 'Cohere Rerank', 'Zod', 'n8n', 'Docker', 'GitLab API', 'Vite', 'pino'].map((tech) => (
+                                    <Badge key={tech} variant="outline" className="text-xs text-center">
+                                        {tech}
+                                    </Badge>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="space-y-2">
+                            <h4 className="font-semibold text-sm">Key Achievements</h4>
+                            <ul className="text-sm space-y-1">
+                                <li>• RAG(Retrieval-Augmented Generation) 파이프라인 기반 AI 코드리뷰 에이전트를 설계·개발하여, MR 변경사항에 프로젝트 컨텍스트를 결합한 고품질 AI 자동 리뷰 시스템 구축</li>
+                                <li>• Qdrant Hybrid Search(Dense 임베딩 + TF-IDF Sparse) + RRF 퓨전 + Cohere Rerank 4단계 검색·재순위 파이프라인으로, 프로젝트 규칙·가이드 문서에서 변경사항과 가장 관련도 높은 컨텍스트를 정밀 추출</li>
+                                <li>• 적응형 청킹 엔진 설계 — Markdown(헤딩 기반), Code(함수·export 단위), HTML(구조 기반) 등 문서 유형별 최적 분할 전략을 적용하여 RAG 검색 정확도 극대화</li>
+                                <li>• Diff 파싱 시 변경 라인 ±50줄의 주변 코드를 함께 수집하여, AI가 변경 맥락을 충분히 이해한 상태에서 리뷰를 생성하도록 컨텍스트 윈도우 최적화</li>
+                                <li>• GPT-5 JSON Mode + Zod 스키마 검증으로 severity(critical~nitpick) × category(memory-leak, performance, security 등) 구조화된 리뷰 결과를 생성하고, GitLab MR 요약 코멘트 + 인라인 코멘트로 자동 작성</li>
+                                <li>• 전략 패턴 기반 Reranking 폴백 설계 — Cohere Rerank 장애 시 LLM Rerank로 자동 전환하여 서비스 안정성 확보, Azure OpenAI 429 에러 대응 지수 백오프 재시도 로직 구현</li>
+                                <li>• CLI(Commander.js) · 프로그래매틱 API · n8n 워크플로우 · Express API 서버 등 4가지 실행 인터페이스를 지원하는 다중 통합 아키텍처 설계</li>
+                                <li>• n8n 웹훅 기반 자동화 워크플로우 구축 — GitLab MR 생성/업데이트 이벤트 수신 시 Draft MR·봇 루프 필터링 후 자동 코드리뷰 실행</li>
+                                <li>• Turborepo 모노레포 내 독립 패키지(@support/code-review-agent)로 설계하여 ESM/CJS 듀얼 빌드 지원 및 타 프로젝트 재사용성 확보</li>
+                            </ul>
+                        </div>
+                    </CardContent>
+                </Card>
 
                 {/* 라벨 기반 브랜치 배포전략 설계 및 구축 */}
                 <Card className="border-l-4 border-primary">
