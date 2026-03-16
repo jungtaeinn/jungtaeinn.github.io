@@ -45,7 +45,6 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const posts = getSortedPostsData();
-  const featuredPosts = posts.filter(post => post.featured).slice(0, 6);
 
   return (
     <>
@@ -64,7 +63,7 @@ export default function HomePage() {
         
         <section className="py-8">
           <PostList 
-            posts={featuredPosts}
+            posts={posts}
             title="Recent Posts"
             description="Latest thoughts and insights"
             showLoadMore={true}

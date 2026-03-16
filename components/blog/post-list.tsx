@@ -20,9 +20,15 @@ export default function PostList({ posts, title, description, showLoadMore = fal
   const postsPerPage = 6;
 
   useEffect(() => {
-    setDisplayedPosts(posts.slice(0, postsPerPage));
-    setHasMore(posts.length > postsPerPage);
-  }, [posts]);
+    if (showLoadMore) {
+      setDisplayedPosts(posts.slice(0, postsPerPage));
+      setHasMore(posts.length > postsPerPage);
+      return;
+    }
+
+    setDisplayedPosts(posts);
+    setHasMore(false);
+  }, [posts, showLoadMore]);
 
   const loadMorePosts = () => {
     setIsLoading(true);
