@@ -28,6 +28,10 @@ coverImage: "/images/posts/team-lead-dashboard-jira-gitlab-scoring/cover.png"
 > 이 글의 목적은 "예쁜 대시보드"를 소개하는 것이 아니라,  
 > **팀 리더가 Jira + GitLab + Plasma DB 기반으로 팀 운영을 정량화하는 방법**을 설명하는 것입니다.
 
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/images/posts/team-lead-dashboard-jira-gitlab-scoring/dashboard-overview.png" alt="TeamScope 메인 팀 성과 대시보드 - 기간 필터, 개발자 필터, KPI 카드, 팀 점수 추세와 역량 레이더를 한 화면에서 보여주는 구성" style="max-width: 100%; height: auto;" />
+</div>
+
 > 💡 **이 글에서 다룰 내용**
 > - 왜 팀 관리에 정량화 체계가 필요한가
 > - Jira API, GitLab API, Plasma DB를 연결한 데이터 파이프라인 설계
@@ -270,10 +274,6 @@ Jira와 GitLab의 원천 데이터는 구조도 다르고 시간축도 다릅니
 그래서 화면은 **"팀 전체를 본 뒤, 필요한 개인을 깊게 보는 구조"** 에 맞춰 설계했습니다.
 
 #### 메인 팀 대시보드
-
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/images/posts/team-lead-dashboard-jira-gitlab-scoring/dashboard-overview.png" alt="TeamScope 메인 팀 성과 대시보드 - 기간 필터, 개발자 필터, KPI 카드, 팀 점수 추세와 역량 레이더를 한 화면에서 보여주는 구성" style="max-width: 100%; height: auto;" />
-</div>
 
 메인 화면에서는 아래 질문에 먼저 답합니다.
 
