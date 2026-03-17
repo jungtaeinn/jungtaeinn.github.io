@@ -143,7 +143,7 @@ Jira가 "일의 진행"을 보여준다면, GitLab은 "협업과 코드 품질"�
 리뷰에 잘 참여하지 않거나, 피드백을 반영하지 않거나, 머지 리드타임이 과도하게 길다면 생산성이 높아 보여도 팀 전체 효율은 오히려 떨어질 수 있습니다.
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/images/posts/team-lead-dashboard-jira-gitlab-scoring/mr-status.png" alt="TeamScope MR 현황 화면 - GitLab 머지 리퀘스트 상태, 코멘트 수, 생성일, 머지일, 리드타임을 보여주는 코드 품질 대시보드" style="max-width: 100%; height: auto;" />
+  <img src="/images/posts/team-lead-dashboard-jira-gitlab-scoring/developer-mrs.png" alt="TeamScope MR 현황 화면 - GitLab 머지 리퀘스트 상태, 코멘트 수, 생성일, 머지일, 리드타임을 보여주는 코드 품질 대시보드" style="max-width: 100%; height: auto;" />
 </div>
 
 GitLab API 기준으로는 아래 항목을 핵심적으로 반영했습니다.
